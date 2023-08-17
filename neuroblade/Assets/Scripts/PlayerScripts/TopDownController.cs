@@ -38,19 +38,20 @@ public class TopDownController : MonoBehaviour
     {
         List<Sprite> directionSprites = GetSpriteDirection();
 
-
-        if(directionSprites != null)
+        if (directionSprites != null)
         {
-            float playTime = Time.time - idleTime; //time since started walking
-            int totalFrames = (int)(playTime * framRate); //total frames since started
-            int frame = (int)((playTime * framRate) % directionSprites.Count); //urrent frame
+            float playTime = Time.time - idleTime;
+            int totalFrames = (int)(playTime * framRate);
+            int frame = totalFrames % directionSprites.Count;
 
-            spriteRenderer.sprite = directionSprites[0];
-        }else
+            spriteRenderer.sprite = directionSprites[frame]; 
+        }
+        else
         {
             idleTime = Time.time;
         }
     }
+
 
     private void FixedUpdate()
     {
