@@ -601,6 +601,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa221ada0d480b64999f414d3e523def, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &876249498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500963967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59c9811754e42be43a17967d111d7e19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loaderrorScreen: {fileID: 0}
+  recepkaan:
+    realname: recepkaan
+    currentcash: 20
+    mind: 3
+    body: 5
 --- !u!1 &957485383
 GameObject:
   m_ObjectHideFlags: 0
@@ -796,6 +814,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 525e5bfbc7bb66b4993c32aabb461ebe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterstat:
+    realname: 
+    currentcash: 0
+    mind: 0
+    body: 0
 --- !u!1 &1137057895
 GameObject:
   m_ObjectHideFlags: 0
@@ -1008,7 +1031,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59c9811754e42be43a17967d111d7e19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  money: 0
+  loaderrorScreen: {fileID: 0}
+  recepkaan:
+    realname: recepkaan
+    currentcash: 20
+    mind: 3
+    body: 5
 --- !u!1 &1290036902
 GameObject:
   m_ObjectHideFlags: 0
@@ -1818,6 +1846,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6704119575592690077, guid: e893b59587be8564c95d47c89a584fc4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 876249497}
+    - targetCorrespondingSourceObject: {fileID: 6704119575592690077, guid: e893b59587be8564c95d47c89a584fc4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 876249498}
   m_SourcePrefab: {fileID: 100100000, guid: e893b59587be8564c95d47c89a584fc4, type: 3}
 --- !u!1001 &7204983745271148106
 PrefabInstance:
@@ -1827,6 +1858,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3514349298388490883, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}
+      propertyPath: m_text
+      value: 0$
+      objectReference: {fileID: 0}
     - target: {fileID: 5461360118898759142, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}
       propertyPath: m_Name
       value: Canvas
