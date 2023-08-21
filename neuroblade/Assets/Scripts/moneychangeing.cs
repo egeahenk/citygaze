@@ -7,15 +7,19 @@ public class moneychangeing : MonoBehaviour
 {
     public characterstatdata characterstat;
 
+    public savemanager savemanag;
+
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.T))
         { 
             characterstat.currentcash += 100;
+            savemanag.JsonSave();
         }
         else if(Input.GetKeyDown(KeyCode.Y))
         {
             characterstat.currentcash -= 100;
+            savemanag.JsonSave();
         }
     }
 

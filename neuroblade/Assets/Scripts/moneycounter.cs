@@ -8,7 +8,7 @@ using Unity.VisualScripting;
 public class moneycounter : MonoBehaviour
 {
     private TextMeshProUGUI text;
-    public characterstatdata characterstat;
+    public savemanager savemanag;
 
     private void Awake()
     {
@@ -17,7 +17,7 @@ public class moneycounter : MonoBehaviour
 
     private void Update()
     {
-        text.text = characterstat.currentcash + "$";
+        text.text = savemanag.recepkaan.currentcash.ToString() + "$";
     }
 }
 

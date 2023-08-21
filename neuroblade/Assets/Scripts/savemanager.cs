@@ -9,7 +9,6 @@ using UnityEngine.SceneManagement;
 
 public class savemanager : MonoBehaviour
 {
-    public MenuHandler menuhand;
     public characterstatdata recepkaan = new characterstatdata("recepkaan", 20, 3, 5);
 
     private void Update()
