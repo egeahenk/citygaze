@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f109ebbadf6440643b52e4c85e44f06c, type: 3}
-  m_Name: Knife
+  m_Name: JazzCake
   m_EditorClassIdentifier: 
-  sprite: {fileID: -441410704, guid: bf600bd0c136ba846b2df93cda97839e, type: 3}
+  sprite: {fileID: -372632820, guid: bf600bd0c136ba846b2df93cda97839e, type: 3}
   itemTag: 1
   equipmentPrefab: {fileID: 0}
