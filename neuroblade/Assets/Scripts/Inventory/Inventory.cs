@@ -30,14 +30,11 @@ public class Inventory : MonoBehaviour
     {
         Item _item = item;
         if(_item == null)
-        {
-            int random = Random.Range(0, items.Length);
-            _item = items[random];
-        }
+        { _item = PickRandomItem(); }
 
-        for (int i = 0; i < inventorySlots.Length; i++)
+    for (int i = 0; i < inventorySlots.Length; i++)
         {
-            //Check if the slot is empty
+            // Check if the slot is empty
             if(inventorySlots[i].myItem == null)
             {
                 Instantiate(itemPrefab, inventorySlots[i].transform).Initialize(_item, inventorySlots[i]);
@@ -70,7 +67,12 @@ public class Inventory : MonoBehaviour
         item.transform.SetParent(draggablesTransform);
     }
 
-
+    Item PickRandomItem()
+    {
+        int random = Random.Range(0, items.Length);
+        return items[random];
+    }
+    
     public void EquipEquipment(SlotTag tag, InventoryItem item = null)
     {
         switch (tag)
