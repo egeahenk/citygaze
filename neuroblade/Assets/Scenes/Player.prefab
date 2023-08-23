@@ -36,7 +36,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4544799035671435001
 SpriteRenderer:
@@ -225,8 +225,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.008035451, y: 0.06428364}
-  m_Size: {x: 0.24466795, y: 0.6142984}
+  m_Offset: {x: -0.010251999, y: 0.062066555}
+  m_Size: {x: 0.22249603, y: 0.60099506}
   m_Direction: 0
 --- !u!114 &6037614804881684478
 MonoBehaviour:
@@ -245,6 +245,7 @@ MonoBehaviour:
     currentcash: 0
     mind: 0
     body: 0
+  savemanag: {fileID: 2440127077469386678}
 --- !u!114 &2440127077469386678
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -257,7 +258,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59c9811754e42be43a17967d111d7e19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menuhand: {fileID: 0}
   recepkaan:
     realname: recepkaan
     currentcash: 20

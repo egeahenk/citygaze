@@ -13,12 +13,12 @@ public class moneychangeing : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.T))
         { 
-            characterstat.currentcash += 100;
+            savemanag.recepkaan.currentcash += 100;
             savemanag.JsonSave();
         }
         else if(Input.GetKeyDown(KeyCode.Y))
         {
-            characterstat.currentcash -= 100;
+            savemanag.recepkaan.currentcash -= 100;
             savemanag.JsonSave();
         }
     }
