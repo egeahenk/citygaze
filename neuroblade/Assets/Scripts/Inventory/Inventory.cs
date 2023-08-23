@@ -52,6 +52,20 @@ public class Inventory : MonoBehaviour
     }
 
 
+    public void GetKnife()
+    {
+        List<Item> knifeItems = new List<Item>();
+        foreach (Item item in items)
+        {
+            if (item.itemTag == SlotTag.Knife) {knifeItems.Add(item);}
+        }
+        Item selectedKnifeItem = knifeItems[Random.Range(0, knifeItems.Count)];
+
+        SpawnInventoryItem(selectedKnifeItem);
+    }
+
+
+
     void Update()
     {
         if(carriedItem == null) return;
