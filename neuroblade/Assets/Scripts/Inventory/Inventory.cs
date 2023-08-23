@@ -16,7 +16,6 @@ public class Inventory : MonoBehaviour
     [Header("Item List")]
     [SerializeField] Item[] items;
 
-
     [Header("Debug")]
     [SerializeField] Button giveItemButon;
 
@@ -28,6 +27,12 @@ public class Inventory : MonoBehaviour
 
     public void SpawnInventoryItem(Item item = null)
     {
+        if (items.Length == 0)
+        {
+            Debug.LogWarning("No items in the 'items' array.");
+            return;
+        }
+
         Item _item = item;
         if(_item == null)
         {
