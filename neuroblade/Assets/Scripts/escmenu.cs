@@ -28,16 +28,18 @@ public class escmenu : MonoBehaviour
 
     #endregion
     
-    
+    bool isESCopen = false;
+
     void Update()
     {
-
-        
-        if(Input.GetKey(KeyCode.Escape))
+        if(Input.GetKey(KeyCode.Escape) && isESCopen)
         {
+            isESCopen = true;
             OpenEscapeMenu();
+        }else if(Input.GetKey(KeyCode.Escape) && !isESCopen)
+        {
+            isESCopen = false;
+            CloseEscapeMenu();
         }
-
-
     }
 }
