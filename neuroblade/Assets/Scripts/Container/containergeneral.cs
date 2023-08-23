@@ -15,28 +15,48 @@ public class containergeneral : MonoBehaviour
 
 
     public bool isCollected = false;
-    
-    
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        Debug.Log("Trigger Enter");
-        if(other.CompareTag("Player"))
-        {
-            Debug.Log("Player Detected"); 
-            if(Input.GetKey(KeyCode.R) && isCollected)
-            {
-            Debug.Log("Get Key");
-            OpenContainer(); 
-            isCollected=true;
-            }else return;
+    public bool isTriggered = false;
 
-        }
+    void Awake()
+    {
+    FindObjectOfType<Inventory>();
     }
+
+    private void Update()
+    {
+        if(Input.GetKey(KeyCode.R) && !isCollected && isTriggered)
+        {
+            Debug.Log("R Key");
+            OpenContainer();
+            isCollected = true;
+        }else return;
+    }
+
+    
+/*
+        if (other.CompareTag("Player") && !isCollected)
+        {
+            if(Input.GetKey(KeyCode.R))
+            {
+            Debug.Log("R Key");
+            OpenContainer();
+            isCollected = true;
+            }else Debug.Log("Key Skipped"); return;
+        }
+*/
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {isTriggered = true;}
+    }
+
+
+
+
 
     private void OnTriggerExit2D(Collider2D other) 
     {
-        Debug.Log("Trigger Exit");
-        if(other.CompareTag("Player")) {CloseContainer();}    
+        if(other.CompareTag("Player")) {CloseContainer(); isTriggered = false;}    
     }
 
     void OpenContainer()
