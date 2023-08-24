@@ -5,9 +5,11 @@ using UnityEngine;
 public class knifecollector : MonoBehaviour
 {
     private Inventory inv;
-    private void Awake()
+    private escmenu esc;
+    private void Start()
     {
         inv = FindObjectOfType<Inventory>();
+        esc = FindObjectOfType<escmenu>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -15,7 +17,7 @@ public class knifecollector : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             Destroy(gameObject);
-            inv.GetKnife();
+            if (inv != null) {inv.GetKnife();}
         }
     }
 }

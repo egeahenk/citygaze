@@ -18,12 +18,14 @@ public class escmenu : MonoBehaviour
     {
         escapePanel.SetActive(true);
         orangeCash.gameObject.SetActive(false);
+        isESCopen = true;
     }
 
     public void CloseEscapeMenu()
     {
         escapePanel.SetActive(false);
         orangeCash.gameObject.SetActive(true);
+        isESCopen = false;
     }
 
     #endregion
@@ -32,14 +34,9 @@ public class escmenu : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKey(KeyCode.Escape) && isESCopen)
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            isESCopen = true;
-            OpenEscapeMenu();
-        }else if(Input.GetKey(KeyCode.Escape) && !isESCopen)
-        {
-            isESCopen = false;
-            CloseEscapeMenu();
+            if (isESCopen) { CloseEscapeMenu(); } else { OpenEscapeMenu(); }
         }
     }
 }

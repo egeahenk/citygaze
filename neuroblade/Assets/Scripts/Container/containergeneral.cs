@@ -17,9 +17,9 @@ public class containergeneral : MonoBehaviour
     public bool isCollected = false;
     public bool isTriggered = false;
 
-    void Awake()
+    void Start()
     {
-    FindObjectOfType<Inventory>();
+        inv = FindObjectOfType<Inventory>();
     }
 
     private void Update()
@@ -29,6 +29,7 @@ public class containergeneral : MonoBehaviour
             Debug.Log("R Key");
             OpenContainer();
             isCollected = true;
+            inv.GetCardboard();
         }else return;
     }
 

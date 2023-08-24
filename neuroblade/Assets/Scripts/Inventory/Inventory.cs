@@ -7,6 +7,7 @@ public class Inventory : MonoBehaviour
 {
     public static Inventory Singleton;
     public static InventoryItem carriedItem;
+    private escmenu esc;
 
     [SerializeField] InventorySlot[] inventorySlots;
 
@@ -23,6 +24,7 @@ public class Inventory : MonoBehaviour
     {
         Singleton = this;
         giveItemButon.onClick.AddListener(delegate {SpawnInventoryItem();});
+        esc = FindObjectOfType<escmenu>();
     }
 
     public void SpawnInventoryItem(Item item = null)
@@ -62,6 +64,20 @@ public class Inventory : MonoBehaviour
         Item selectedKnifeItem = knifeItems[Random.Range(0, knifeItems.Count)];
 
         SpawnInventoryItem(selectedKnifeItem);
+        esc.OpenEscapeMenu();
+    }
+
+
+    public void GetCardboard()
+    {
+        List<Item> cardboardGet = new List<Item>();
+        foreach (Item item in items)
+        {
+            if (item.itemTag == SlotTag.CardBoard) {cardboardGet.Add(item);}
+        }
+        Item selectedCardBoardItem = cardboardGet[Random.Range(0, cardboardGet.Count)];
+
+        SpawnInventoryItem(selectedCardBoardItem);
     }
 
 
