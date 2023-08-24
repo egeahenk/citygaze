@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8721720911281037451}
   - component: {fileID: 551404755892581403}
   - component: {fileID: 2693260637278542171}
+  - component: {fileID: -4122456876838491983}
   m_Layer: 5
   m_Name: invitem
   m_TagString: Untagged
@@ -89,3 +90,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1a86820e32198724bb2cae0974a20699, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!225 &-4122456876838491983
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7429748700366391529}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0

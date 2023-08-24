@@ -22,10 +22,22 @@ public class Inventory : MonoBehaviour
 
     void Awake()
     {
+        giveItemButon.onClick.AddListener(delegate {SpawnInventoryItem();});
         Singleton = this;
         giveItemButon.onClick.AddListener(delegate {SpawnInventoryItem();});
         esc = FindObjectOfType<escmenu>();
     }
+
+    public Item[] GetItems()
+    {
+        return items;
+    }
+
+    public InventorySlot[] GetInventorySlots()
+    {
+        return inventorySlots;
+    }
+
 
     public void SpawnInventoryItem(Item item = null)
     {
@@ -54,18 +66,7 @@ public class Inventory : MonoBehaviour
     }
 
 
-    public void GetKnife()
-    {
-        List<Item> knifeItems = new List<Item>();
-        foreach (Item item in items)
-        {
-            if (item.itemTag == SlotTag.Knife) {knifeItems.Add(item);}
-        }
-        Item selectedKnifeItem = knifeItems[Random.Range(0, knifeItems.Count)];
 
-        SpawnInventoryItem(selectedKnifeItem);
-        esc.OpenEscapeMenu();
-    }
 
 
     public void GetCardboard()

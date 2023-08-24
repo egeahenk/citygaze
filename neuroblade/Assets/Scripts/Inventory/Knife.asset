@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Knife
   m_EditorClassIdentifier: 
   sprite: {fileID: -441410704, guid: bf600bd0c136ba846b2df93cda97839e, type: 3}
-  itemTag: 1
-  equipmentPrefab: {fileID: 6354027660810737294, guid: c32d777b296fdce4dbd50a3a0eea4e03, type: 3}
+  itemTag: 2
+  equipmentPrefab: {fileID: 1420499104494342611, guid: 03360757616d6594fbf01887604eb78e, type: 3}
