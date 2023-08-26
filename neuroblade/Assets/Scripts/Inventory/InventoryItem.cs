@@ -1,10 +1,11 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class InventoryItem : MonoBehaviour, IPointerClickHandler
+public class InventoryItem : MonoBehaviour
 {
     Image itemIcon;
     public CanvasGroup canvasGroup {get; private set;}
@@ -26,17 +27,38 @@ public class InventoryItem : MonoBehaviour, IPointerClickHandler
         itemIcon.sprite = item.sprite;
     }
 
-    public void OnPointerClick(PointerEventData eventData)
+
+    public event Action<InventoryItem> OnItemClicked,
+            OnItemDropped, OnItemBeginDragged, OnItemEndDrag,
+            OnRightMouseBtnClick;
+
+    private bool empty = true;
+
+    public void SetData(Sprite sprite)
     {
-        if(eventData.button == PointerEventData.InputButton.Left)
-        {
-            Inventory.Singleton.SetCarriedItem(this);
-        }
-    
-    
+        this.itemIcon.sprite = sprite;
+        this.empty = false;
+    }
+    public void OnBeingDrag()
+    {
+        if(empty) return;
+        OnItemBeginDragged?.Invoke(this);
+    }
+    public void OnDrop()
+    {
+        OnItemDropped?.Invoke(this);
+    }
+    public void OnEndDrag()
+    {
+        OnItemEndDrag?.Invoke(this);
     }
 
+    public void OnPointerClick(BaseEventData data)
+    {
+        PointerEventData pointerData = (PointerEventData)data;
+        if(pointerData.button == PointerEventData.InputButton.Right)
+        {
 
-
-
+        }else {OnItemClicked?.Invoke(this);}
+    }
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,22 +10,23 @@ public class Inventory : MonoBehaviour
     public static InventoryItem carriedItem;
     private escmenu esc;
 
-    [SerializeField] InventorySlot[] inventorySlots;
+    public bool IsKnifeHolding = false;
 
-    [SerializeField] Transform draggablesTransform;
+    [SerializeField] InventorySlot[] inventorySlots;
     [SerializeField] InventoryItem itemPrefab;
+
+    [SerializeField] DragTest dragtest;
 
     [Header("Item List")]
     [SerializeField] Item[] items;
 
     [Header("Debug")]
-    [SerializeField] Button giveItemButon;
+    [SerializeField] Button giveItemButton;
 
     void Awake()
     {
-        giveItemButon.onClick.AddListener(delegate {SpawnInventoryItem();});
+        dragtest.Toggle(false);
         Singleton = this;
-        giveItemButon.onClick.AddListener(delegate {SpawnInventoryItem();});
         esc = FindObjectOfType<escmenu>();
     }
 
@@ -38,7 +40,6 @@ public class Inventory : MonoBehaviour
         return inventorySlots;
     }
 
-
     public void SpawnInventoryItem(Item item = null)
     {
         if (items.Length == 0)
@@ -48,7 +49,7 @@ public class Inventory : MonoBehaviour
         }
 
         Item _item = item;
-        if(_item == null)
+        if (_item == null)
         {
             int random = Random.Range(0, items.Length);
             _item = items[random];
@@ -56,40 +57,68 @@ public class Inventory : MonoBehaviour
 
         for (int i = 0; i < inventorySlots.Length; i++)
         {
-            //Check if the slot is empty
-            if(inventorySlots[i].myItem == null)
+            // Check if the slot is empty
+            if (inventorySlots[i].myItem == null)
             {
-                Instantiate(itemPrefab, inventorySlots[i].transform).Initialize(_item, inventorySlots[i]);
+                InventoryItem newItem = Instantiate(itemPrefab, inventorySlots[i].transform);
+                newItem.Initialize(_item, inventorySlots[i]);
                 break;
             }
         }
     }
 
-
-
-
-
-    public void GetCardboard()
-    {
-        List<Item> cardboardGet = new List<Item>();
-        foreach (Item item in items)
-        {
-            if (item.itemTag == SlotTag.CardBoard) {cardboardGet.Add(item);}
-        }
-        Item selectedCardBoardItem = cardboardGet[Random.Range(0, cardboardGet.Count)];
-
-        SpawnInventoryItem(selectedCardBoardItem);
-    }
-
-
-
     void Update()
     {
-        if(carriedItem == null) return;
+        if (carriedItem == null) return;
 
-        carriedItem.transform.position=Input.mousePosition;
+        carriedItem.transform.position = Input.mousePosition;
     }
-    
+
+/*          
+            iitem.transform.SetParent(game);
+            items.Add(iitem);
+*/
+
+    public void InitializeInventory(int inventorysize)
+    {
+        for(int i = 0; i < inventorysize; i++)
+        {
+            InventoryItem iitem = Instantiate(itemPrefab, Vector3.zero, Quaternion.identity);
+            iitem.OnItemClicked += HandleItemSelection;
+            iitem.OnItemBeginDragged += HandleBeginDrag;
+            iitem.OnItemDropped += HandleSwap;
+            iitem.OnItemEndDrag += HandleEndDrag;
+            iitem.OnRightMouseBtnClick += HandleShowItemActions;
+        }
+    }
+
+    public void HandleShowItemActions(InventoryItem obj)
+    {
+
+    }
+
+    public void HandleEndDrag(InventoryItem obj)
+    {
+        dragtest.Toggle(false);
+    }
+
+
+    public void HandleSwap(InventoryItem obj)
+    {
+
+    }
+
+
+    public void HandleBeginDrag(InventoryItem obj)
+    {
+        dragtest.Toggle(true);
+    }
+
+    public void HandleItemSelection(InventoryItem obj)
+    {
+        
+    }
+/*
     public void SetCarriedItem(InventoryItem item)
     {
         if(carriedItem != null)
@@ -105,30 +134,30 @@ public class Inventory : MonoBehaviour
         carriedItem.canvasGroup.blocksRaycasts = false;
         item.transform.SetParent(draggablesTransform);
     }
-
+*/
 
     public void EquipEquipment(SlotTag tag, InventoryItem item = null)
     {
         switch (tag)
         {
-
-        case SlotTag.Knife:
-            if(item == null)
-            {
-                //Destroy item.equipmentPrefab on the Player Object
-                IsKnifeHolding = false;
-                Debug.Log("Unequipped Knife on " + tag);
-            }
-            else 
-            {
-                //Instantiate item.equippmenPrefab on the Player Object
-                IsKnifeHolding = true;
-                Debug.Log("Equipped " + item.myItem.name + "on " + tag);
-            }
-            break;
+            case SlotTag.Knife:
+                if (item == null)
+                {
+                    // Destroy item.equipmentPrefab on the Player Object
+                    IsKnifeHolding = false;
+                    Debug.Log("Unequipped Knife on " + tag);
+                }
+                else
+                {
+                    // Instantiate item.equipmentPrefab on the Player Object
+                    IsKnifeHolding = true;
+                    Debug.Log("Equipped " + item.myItem.name + " on " + tag);
+                }
+                break;
         }
     }
 
-    public bool IsKnifeHolding = false;
+
+
 
 }
