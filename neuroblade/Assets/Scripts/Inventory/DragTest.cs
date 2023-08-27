@@ -8,20 +8,20 @@ public class DragTest : MonoBehaviour
     [SerializeField] private Camera mainCam;
 
     [SerializeField] private InventoryItem item;
-
+/*
     public void Awake()
     {
         canvas = transform.root.GetComponent<Canvas>();
         mainCam = Camera.main;
         item = GetComponentInChildren<InventoryItem>();
     }
-    
-/*
+
+
     public void SetData(Sprite sprite)
     {
         item.SetData(sprite);
     }
-*/
+
 
     void Update()
     {
@@ -39,5 +39,5 @@ public class DragTest : MonoBehaviour
     {
         gameObject.SetActive(val);
     }
-
+*/
 }

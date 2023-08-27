@@ -11,71 +11,31 @@ public class containergeneral : MonoBehaviour
     public Sprite closedContainer;
     public Sprite openContainer;
 
+    public ClosedInventorySystem closeinv;
     public bool isCollected = false;
     public bool isTriggered = false;
-
-    private escmenu esc;
-    private Inventory inv;
-
-    [SerializeField] InventoryItem itemPrefab;
+    public savemanager savemanag;  
 
     private void Awake()
     {
-        inv = FindObjectOfType<Inventory>();
-        esc = FindObjectOfType<escmenu>();
+        
     }
 
     private void Update()
     {
-        if(Input.GetKey(KeyCode.R) && !isCollected && isTriggered)
+        if(Input.GetKey(KeyCode.E) && !isCollected && isTriggered)
         {
-            Debug.Log("R Key");
+            Debug.Log("E Key");
             OpenContainer();
             isCollected = true;
             GetCardboard();
         }else return;
     }
 
-public void GetCardboard()
-{
-    esc.OpenEscapeMenu();
-
-    Item[] inventoryItems = inv.GetItems();
-    InventorySlot[] inventorySlots = inv.GetInventorySlots();
-    
-    if (inventoryItems.Length == 0)
+    public void GetCardboard()
     {
-        Debug.LogWarning("No items in the 'items' array.");
-        return;
+        savemanag.recepkaan.cardboardamount += 1;
     }
-
-    List<Item> cardboardItems = new List<Item>();
-    foreach (Item item in inventoryItems)
-    {
-        if (item.itemTag == SlotTag.cardboard)
-        {
-            cardboardItems.Add(item);
-        }
-    }
-
-    if (cardboardItems.Count == 0)
-    {
-        Debug.LogWarning("No items with 'cardboard' tag in the 'items' array.");
-        return;
-    }
-
-    int random = Random.Range(0, cardboardItems.Count);
-    Item selectedcardboardItem = cardboardItems[random];
-
-    for (int i = 0; i < inventorySlots.Length; i++)
-    {
-        if (inventorySlots[i].myItem == null)
-        {
-            Instantiate(itemPrefab, inventorySlots[i].transform).Initialize(selectedcardboardItem, inventorySlots[i]);
-            break;
-        }
-    }
-}
 
     
 /*
@@ -96,9 +56,6 @@ public void GetCardboard()
     }
 
 
-
-
-
     private void OnTriggerExit2D(Collider2D other) 
     {
         if(other.CompareTag("Player")) {CloseContainer(); isTriggered = false;}    
@@ -106,13 +63,11 @@ public void GetCardboard()
 
     void OpenContainer()
     {
-        Debug.Log("OpenContainer Activated");
         spri.sprite = openContainer;
     }
 
     void CloseContainer()
     {
-        Debug.Log("CloseContainer Activated");
         spri.sprite = closedContainer;
     }
 

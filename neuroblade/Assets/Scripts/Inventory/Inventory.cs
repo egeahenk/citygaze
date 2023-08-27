@@ -10,14 +10,14 @@ public class Inventory : MonoBehaviour
     public static InventoryItem carriedItem;
     private escmenu esc;
 
-    public bool IsKnifeHolding = false;
-
     [SerializeField] InventorySlot[] inventorySlots;
     [SerializeField] InventoryItem itemPrefab;
-    
+
+    /*
     [SerializeField] Transform draggablesTransform;
-/*
-    [SerializeField] DragTest dragtest;*/
+    */
+    
+    [SerializeField] DragTest dragtest;
 
     [Header("Item List")]
     [SerializeField] Item[] items;
@@ -26,6 +26,7 @@ public class Inventory : MonoBehaviour
     [SerializeField] Button giveItemButton;
 
 
+/*    
     void Awake()
     {
         Singleton = this;
@@ -38,21 +39,28 @@ public class Inventory : MonoBehaviour
         carriedItem.transform.position = Input.mousePosition;
     }
 
-    public void SetCarriedItem(InventoryItem item)
+public void SetCarriedItem(InventoryItem item)
+{
+    if (item == null || item.activeSlot == null || item.myItem == null)
     {
-        if(carriedItem != null)
-        {
-            if(item.activeSlot.myTag != SlotTag.None && item.activeSlot.myTag != carriedItem.myItem.itemTag) return;
-            item.activeSlot.SetItem(carriedItem);
-        }
-
-        if(item.activeSlot.myTag != SlotTag.None)
-        { EquipEquipment(item.activeSlot.myTag, null); }
-
-        carriedItem = item;
-        carriedItem.canvasGroup.blocksRaycasts = false;
-        item.transform.SetParent(draggablesTransform);
+        // Handle the case where any of these properties are null.
+        return;
     }
+
+    if (carriedItem != null)
+    {
+        if (item.activeSlot.myTag != SlotTag.None && item.activeSlot.myTag != carriedItem.myItem.itemTag) return;
+        item.activeSlot.SetItem(carriedItem);
+    }
+
+    if (item.activeSlot.myTag != SlotTag.None)
+    { EquipEquipment(item.activeSlot.myTag, null); }
+
+    carriedItem = item;
+    carriedItem.canvasGroup.blocksRaycasts = false;
+    item.transform.SetParent(draggablesTransform);
+}
+
 
   public void EquipEquipment(SlotTag tag, InventoryItem item = null)
     {
@@ -83,11 +91,12 @@ public class Inventory : MonoBehaviour
     {
         return inventorySlots;
     }
-
-
-
-/*    void Awake()
+*/
+/*
+   void Awake()
     {
+        Hide();
+
         dragtest.Toggle(false);
         Singleton = this;
         esc = FindObjectOfType<escmenu>();
@@ -131,8 +140,8 @@ public class Inventory : MonoBehaviour
 
         carriedItem.transform.position = Input.mousePosition;
     }
-
-/*          
+*/
+/* 
             iitem.transform.SetParent(game);
             items.Add(iitem);
 */
@@ -163,22 +172,29 @@ public class Inventory : MonoBehaviour
 
     public void HandleSwap(InventoryItem InventoryItem)
     {
-
+    List<string> listOfItems = new List<string>();
+    foreach (Item item in items) { listOfItems.Add(item.name); }
+    int index = listOfItems.IndexOf(InventoryItem.myItem.name);
+    if(index == -1) {return;}
     }
 
 
     public void HandleBeginDrag(InventoryItem InventoryItem)
     { 
+    List<string> listOfItems = new List<string>();
+    foreach (Item item in items) { listOfItems.Add(item.name); }
+    int index = listOfItems.IndexOf(InventoryItem.myItem.name);
+    if(index == -1) return;
 
-        dragtest.Toggle(true);
-        dragtest.SetData(InventoryItem.myItem.sprite);
+    dragtest.Toggle(true);
+    dragtest.SetData(InventoryItem.myItem.sprite);
     }
 
     public void HandleItemSelection(InventoryItem InventoryItem)
     {
         
     }
-*/
+    */
 /*
     public void SetCarriedItem(InventoryItem item)
     {
@@ -194,9 +210,9 @@ public class Inventory : MonoBehaviour
         carriedItem = item;
         carriedItem.canvasGroup.blocksRaycasts = false;
         item.transform.SetParent(draggablesTransform);
-    }
-*/
-/*    public void EquipEquipment(SlotTag tag, InventoryItem item = null)
+    }*/
+/*
+    public void EquipEquipment(SlotTag tag, InventoryItem item = null)
     {
         switch (tag)
         {
@@ -216,8 +232,16 @@ public class Inventory : MonoBehaviour
                 break;
         }
     }
+
+
+    public void Show()
+    {
+        gameObject.SetActive(true);
+    }
+
+    public void Hide()
+    {
+        gameObject.SetActive(false);
+    }
 */
-
-
-
 }

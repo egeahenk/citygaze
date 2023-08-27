@@ -12,13 +12,14 @@ public class InventoryItem : MonoBehaviour
 
     public Item myItem {get; set;}
     public InventorySlot activeSlot {get; set;}
-/*
+
     void Awake()
     {
         canvasGroup = GetComponent<CanvasGroup>();
         itemIcon = GetComponent<Image>();
     }
 
+/*
     public void Initialize(Item item, InventorySlot parent)
     {
         activeSlot = parent;
@@ -62,8 +63,9 @@ public class InventoryItem : MonoBehaviour
         {
 
         }else {OnItemClicked?.Invoke(this);}
-    }*/
-
+    }
+*/
+/*
     void Awake()
     {
         canvasGroup = GetComponent<CanvasGroup>();
@@ -85,5 +87,5 @@ public class InventoryItem : MonoBehaviour
             Inventory.Singleton.SetCarriedItem(this);
         }
     }
-    
+*/
 }

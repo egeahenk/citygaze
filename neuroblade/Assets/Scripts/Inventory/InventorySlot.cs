@@ -5,9 +5,10 @@ using UnityEngine.EventSystems;
 
 public class InventorySlot : MonoBehaviour
 {
+    /*
     public InventoryItem myItem {get; set;}
-    public SlotTag myTag;
-
+    public SlotTag myTag;*/
+/*
     public void OnPointerClick(PointerEventData eventData)
     {
         if(eventData.button == PointerEventData.InputButton.Left)
@@ -17,7 +18,8 @@ public class InventorySlot : MonoBehaviour
             SetItem(Inventory.carriedItem);
         }
     }
-
+*/
+/*
     public void SetItem(InventoryItem item)
     {
         Inventory.carriedItem = null;
@@ -35,7 +37,7 @@ public class InventorySlot : MonoBehaviour
         if(myTag != SlotTag.None)
         { Inventory.Singleton.EquipEquipment(myTag, myItem);}
     }
-
+*/
 
 
 

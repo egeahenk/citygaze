@@ -7,19 +7,21 @@ public class characterstatdata
 {
     public string realname;
     public int currentcash;
-    public int mind;
-    public int body;
+    public bool isKnifeHolding;
+    public int cardboardamount;
+    public bool isCorpseFound;
 
 
     public characterstatdata()
     {
 
     }
-    public characterstatdata(string realname, int currentcash, int mind, int body)
+    public characterstatdata(string realname, int currentcash, int cardboardamount, bool isKnifeHolding, bool isCorpseFound)
     {
         this.realname = realname;
         this.currentcash = currentcash;
-        this.mind = mind;
-        this.body = body;
+        this.isKnifeHolding = isKnifeHolding;
+        this.cardboardamount = cardboardamount;
+        this.isCorpseFound = isCorpseFound;
     }
 }
