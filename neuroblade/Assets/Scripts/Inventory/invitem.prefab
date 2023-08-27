@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 551404755892581403}
   - component: {fileID: 2693260637278542171}
   - component: {fileID: -4122456876838491983}
-  - component: {fileID: 3896419682971426416}
+  - component: {fileID: 2752931286180637016}
   m_Layer: 6
   m_Name: invitem
   m_TagString: Untagged
@@ -103,7 +103,7 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &3896419682971426416
+--- !u!114 &2752931286180637016
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -121,60 +121,12 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 2693260637278542171}
-          m_TargetAssemblyTypeName: InventoryItem, Assembly-CSharp
-          m_MethodName: OnPointerClick
-          m_Mode: 0
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 6
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2693260637278542171}
-          m_TargetAssemblyTypeName: InventoryItem, Assembly-CSharp
-          m_MethodName: OnDrop
+          m_TargetAssemblyTypeName: 
+          m_MethodName: 
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 13
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2693260637278542171}
-          m_TargetAssemblyTypeName: InventoryItem, Assembly-CSharp
-          m_MethodName: OnBeingDrag
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - eventID: 14
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2693260637278542171}
-          m_TargetAssemblyTypeName: InventoryItem, Assembly-CSharp
-          m_MethodName: OnEndDrag
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_ObjectArgumentAssemblyTypeName: 
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 

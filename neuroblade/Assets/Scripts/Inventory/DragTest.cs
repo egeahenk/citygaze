@@ -15,11 +15,13 @@ public class DragTest : MonoBehaviour
         mainCam = Camera.main;
         item = GetComponentInChildren<InventoryItem>();
     }
-
+    
+/*
     public void SetData(Sprite sprite)
     {
         item.SetData(sprite);
     }
+*/
 
     void Update()
     {

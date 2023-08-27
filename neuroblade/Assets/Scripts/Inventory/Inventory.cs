@@ -14,8 +14,10 @@ public class Inventory : MonoBehaviour
 
     [SerializeField] InventorySlot[] inventorySlots;
     [SerializeField] InventoryItem itemPrefab;
-
-    [SerializeField] DragTest dragtest;
+    
+    [SerializeField] Transform draggablesTransform;
+/*
+    [SerializeField] DragTest dragtest;*/
 
     [Header("Item List")]
     [SerializeField] Item[] items;
@@ -23,13 +25,55 @@ public class Inventory : MonoBehaviour
     [Header("Debug")]
     [SerializeField] Button giveItemButton;
 
+
     void Awake()
     {
-        dragtest.Toggle(false);
         Singleton = this;
-        esc = FindObjectOfType<escmenu>();
     }
 
+    void Update()
+    {
+        if(carriedItem == null) return;
+
+        carriedItem.transform.position = Input.mousePosition;
+    }
+
+    public void SetCarriedItem(InventoryItem item)
+    {
+        if(carriedItem != null)
+        {
+            if(item.activeSlot.myTag != SlotTag.None && item.activeSlot.myTag != carriedItem.myItem.itemTag) return;
+            item.activeSlot.SetItem(carriedItem);
+        }
+
+        if(item.activeSlot.myTag != SlotTag.None)
+        { EquipEquipment(item.activeSlot.myTag, null); }
+
+        carriedItem = item;
+        carriedItem.canvasGroup.blocksRaycasts = false;
+        item.transform.SetParent(draggablesTransform);
+    }
+
+  public void EquipEquipment(SlotTag tag, InventoryItem item = null)
+    {
+        switch (tag)
+        {
+            case SlotTag.Knife:
+                if (item == null)
+                {
+                    // Destroy item.equipmentPrefab on the Player InventoryItemect
+                    IsKnifeHolding = false;
+                    Debug.Log("Unequipped Knife on " + tag);
+                }
+                else
+                {
+                    // Instantiate item.equipmentPrefab on the Player InventoryItemect
+                    IsKnifeHolding = true;
+                    Debug.Log("Equipped " + item.myItem.name + " on " + tag);
+                }
+                break;
+        }
+    }
     public Item[] GetItems()
     {
         return items;
@@ -39,6 +83,20 @@ public class Inventory : MonoBehaviour
     {
         return inventorySlots;
     }
+
+
+
+/*    void Awake()
+    {
+        dragtest.Toggle(false);
+        Singleton = this;
+        esc = FindObjectOfType<escmenu>();
+    }
+
+
+
+    public Sprite sprite;
+
 
     public void SpawnInventoryItem(Item item = null)
     {
@@ -78,7 +136,7 @@ public class Inventory : MonoBehaviour
             iitem.transform.SetParent(game);
             items.Add(iitem);
 */
-
+/*
     public void InitializeInventory(int inventorysize)
     {
         for(int i = 0; i < inventorysize; i++)
@@ -92,33 +150,35 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public void HandleShowItemActions(InventoryItem obj)
+    public void HandleShowItemActions(InventoryItem InventoryItem)
     {
 
     }
 
-    public void HandleEndDrag(InventoryItem obj)
+    public void HandleEndDrag(InventoryItem InventoryItem)
     {
         dragtest.Toggle(false);
     }
 
 
-    public void HandleSwap(InventoryItem obj)
+    public void HandleSwap(InventoryItem InventoryItem)
     {
 
     }
 
 
-    public void HandleBeginDrag(InventoryItem obj)
-    {
+    public void HandleBeginDrag(InventoryItem InventoryItem)
+    { 
+
         dragtest.Toggle(true);
-        dragtest.SetData(obj.myItem.sprite);
+        dragtest.SetData(InventoryItem.myItem.sprite);
     }
 
-    public void HandleItemSelection(InventoryItem obj)
+    public void HandleItemSelection(InventoryItem InventoryItem)
     {
         
     }
+*/
 /*
     public void SetCarriedItem(InventoryItem item)
     {
@@ -136,28 +196,27 @@ public class Inventory : MonoBehaviour
         item.transform.SetParent(draggablesTransform);
     }
 */
-
-    public void EquipEquipment(SlotTag tag, InventoryItem item = null)
+/*    public void EquipEquipment(SlotTag tag, InventoryItem item = null)
     {
         switch (tag)
         {
             case SlotTag.Knife:
                 if (item == null)
                 {
-                    // Destroy item.equipmentPrefab on the Player Object
+                    // Destroy item.equipmentPrefab on the Player InventoryItemect
                     IsKnifeHolding = false;
                     Debug.Log("Unequipped Knife on " + tag);
                 }
                 else
                 {
-                    // Instantiate item.equipmentPrefab on the Player Object
+                    // Instantiate item.equipmentPrefab on the Player InventoryItemect
                     IsKnifeHolding = true;
                     Debug.Log("Equipped " + item.myItem.name + " on " + tag);
                 }
                 break;
         }
     }
-
+*/
 
 
 

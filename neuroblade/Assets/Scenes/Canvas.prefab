@@ -33,7 +33,7 @@ RectTransform:
   - {fileID: 2133376390750528037}
   - {fileID: 8312315305892472072}
   - {fileID: 923757797783842275}
-  m_Father: {fileID: 7185187643713192596}
+  m_Father: {fileID: 4347864540014255480}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -1303,6 +1303,7 @@ GameObject:
   - component: {fileID: 4831946875252385979}
   - component: {fileID: 4819970447586525747}
   - component: {fileID: 238554991675169698}
+  - component: {fileID: 8183782570175951302}
   m_Layer: 5
   m_Name: InventoryPanel
   m_TagString: Untagged
@@ -1371,6 +1372,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8183782570175951302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2652286656343044314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates: []
 --- !u!1 &2662515083878812953
 GameObject:
   m_ObjectHideFlags: 0
@@ -2356,6 +2370,7 @@ RectTransform:
   m_Children:
   - {fileID: 4831946875252385979}
   - {fileID: 8572835015922553358}
+  - {fileID: 4961917494492032533}
   m_Father: {fileID: 7185187643713192596}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5530,7 +5545,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4961917494492032533}
   - {fileID: 4347864540014255480}
   m_Father: {fileID: 2394819129582200380}
   m_RootOrder: -1

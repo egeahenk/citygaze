@@ -34,10 +34,6 @@ public class InventorySlot : MonoBehaviour
 
         if(myTag != SlotTag.None)
         { Inventory.Singleton.EquipEquipment(myTag, myItem);}
-
-
-
-
     }
 
 
