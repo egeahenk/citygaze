@@ -112,6 +112,7 @@ public class Inventory : MonoBehaviour
     public void HandleBeginDrag(InventoryItem obj)
     {
         dragtest.Toggle(true);
+        dragtest.SetData(obj.myItem.sprite);
     }
 
     public void HandleItemSelection(InventoryItem obj)

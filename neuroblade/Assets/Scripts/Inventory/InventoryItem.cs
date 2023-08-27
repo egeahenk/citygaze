@@ -41,7 +41,7 @@ public class InventoryItem : MonoBehaviour
     }
     public void OnBeingDrag()
     {
-        if(empty) return;
+
         OnItemBeginDragged?.Invoke(this);
     }
     public void OnDrop()
@@ -55,6 +55,8 @@ public class InventoryItem : MonoBehaviour
 
     public void OnPointerClick(BaseEventData data)
     {
+    if(empty) return;
+
         PointerEventData pointerData = (PointerEventData)data;
         if(pointerData.button == PointerEventData.InputButton.Right)
         {

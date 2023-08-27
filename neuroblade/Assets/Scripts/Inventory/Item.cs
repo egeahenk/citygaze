@@ -15,46 +15,4 @@ public class Item : ScriptableObject
 
     [Header("If the item can be equipped")]
     public GameObject equipmentPrefab;
-
-    public event Action<Item> OnItemClicked,
-            OnItemDropped, OnItemBeginDragged, OnItemEndDrag,
-            OnRightMouseBtnClick;
-
-    private bool empty = true;
-
-    public void SetData(Sprite sprite)
-    {
-        this.sprite = sprite;
-        this.empty = false;
-    }
-
-    public void Select()
-    {
-        
-    }
-
-    public void OnBeingDrag()
-    {
-        if(empty) return;
-        OnItemBeginDragged?.Invoke(this);
-    }
-    public void OnDrop()
-    {
-        OnItemDropped?.Invoke(this);
-    }
-    public void OnEndDrag()
-    {
-        OnItemEndDrag?.Invoke(this);
-    }
-
-    public void OnPointerClick(BaseEventData data)
-    {
-        PointerEventData pointerData = (PointerEventData)data;
-        if(pointerData.button == PointerEventData.InputButton.Right)
-        {
-
-        }else {OnItemClicked?.Invoke(this);}
-    }
-
-
 }
