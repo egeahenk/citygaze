@@ -20,8 +20,8 @@ public class characterstatdata
     {
         this.realname = realname;
         this.currentcash = currentcash;
-        this.isKnifeHolding = isKnifeHolding;
         this.cardboardamount = cardboardamount;
+        this.isKnifeHolding = isKnifeHolding;
         this.isCorpseFound = isCorpseFound;
     }
 }

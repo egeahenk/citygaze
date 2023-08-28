@@ -5,41 +5,37 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using Unity.VisualScripting;
 
 public class ClosedInventorySystem : MonoBehaviour
 {
 
-
-    [SerializeField] private TextMeshProUGUI text;
-    public savemanager savemanag;    
+    public GameObject Texty;
+    [SerializeField]private TextMeshProUGUI text;
+    public savemanager savemanag;
+ 
 
     [Header("Knife")]
-    public SpriteRenderer spri;
-    public Sprite fromnowimg;
     public GameObject knifePanel;
+    public GameObject Knife;
 
     [Header("Corpse")]
-    public SpriteRenderer corp;
-    public Sprite corpsefoundimg;
     public GameObject corpsePanel;
+    public GameObject Corpse;
 
     private void Awake()
     {
-        text = GetComponent<TextMeshProUGUI>();
+        text = Texty.GetComponent<TextMeshProUGUI>();
     }
 
     private void Update()
     {
-    if (savemanag != null && savemanag.recepkaan != null)
-    {
-        UpdateCBAmount();
-        KnifeImgLoad();
-        CorpseFoundLoad();
-    }
-    else
-    {
-      Debug.Log("Null SaveManage");
-    }
+
+            UpdateCBAmount();
+
+            KnifeImgLoad();
+            CorpseFoundLoad();
+
     }
 
     public void UpdateCBAmount()
@@ -48,10 +44,10 @@ public class ClosedInventorySystem : MonoBehaviour
     }
 
     void CorpseFoundLoad()
-    { if(!savemanag.recepkaan.isCorpseFound) {corp.sprite = fromnowimg;} }
+    { if(savemanag.recepkaan.isCorpseFound) {Corpse.SetActive(true);} }
     
     void KnifeImgLoad()
-    { if(!savemanag.recepkaan.isKnifeHolding) {spri.sprite = fromnowimg;} }
+    { if(savemanag.recepkaan.isKnifeHolding) {Knife.SetActive(true);} }
 
 
 }

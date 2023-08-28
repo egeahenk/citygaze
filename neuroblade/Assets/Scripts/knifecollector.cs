@@ -24,6 +24,7 @@ public class knifecollector : MonoBehaviour
     public void GetKnife()
     {
         savemanag.recepkaan.isKnifeHolding = true;
+        savemanag.JsonSave();
     }
 
 }

@@ -35,6 +35,7 @@ public class containergeneral : MonoBehaviour
     public void GetCardboard()
     {
         savemanag.recepkaan.cardboardamount += 1;
+        savemanag.JsonSave();
     }
 
     
