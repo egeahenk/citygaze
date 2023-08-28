@@ -13,10 +13,11 @@ public class DayChecker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(IsPlayerD2() && isLoadedAtFirst)
+        if(IsPlayerD2() && !isLoadedAtFirst)
         {
             savemanag.JsonLoad();
             isLoadedAtFirst = true;
+            Debug.Log("First Load Activated");
         }
     }
 

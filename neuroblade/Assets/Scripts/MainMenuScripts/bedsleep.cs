@@ -18,6 +18,12 @@ public class bedleep : MonoBehaviour
         }
     }
 
+    private void OnTriggerExit2D(Collider2D other)
+    {
+            panelselection.SetActive(false);
+    }
+
+
     public void Yes()
     {
         savemanag.JsonSave();

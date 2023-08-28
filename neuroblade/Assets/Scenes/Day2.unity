@@ -336,7 +336,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelselection: {fileID: 7204983745271148107}
-  savemanag: {fileID: 0}
+  savemanag: {fileID: 2134929543}
 --- !u!212 &32331061
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40830,6 +40830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 803b807bf53873d4ea5c003c19241cc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  savemanag: {fileID: 2134929543}
 --- !u!1001 &7204983745271148106
 PrefabInstance:
   m_ObjectHideFlags: 0
