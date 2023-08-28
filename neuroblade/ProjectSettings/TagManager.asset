@@ -47,3 +47,6 @@ TagManager:
   - name: player
     uniqueID: 40051341
     locked: 0
+  - name: raining
+    uniqueID: 3120200595
+    locked: 0

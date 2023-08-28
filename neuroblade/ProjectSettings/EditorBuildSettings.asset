@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Bakkal.unity
     guid: 61b2aab4b917dbc45aa7fbb9e7551f2a
+  - enabled: 1
+    path: Assets/Scenes/Day2.unity
+    guid: 4597f8e91145e3344994ced7332b7eda
   m_configObjects: {}
