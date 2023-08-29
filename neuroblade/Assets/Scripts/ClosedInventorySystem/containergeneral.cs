@@ -16,6 +16,8 @@ public class containergeneral : MonoBehaviour
     public bool isTriggered = false;
     public savemanager savemanag;  
 
+    public musichandler sfx; 
+
     private void Awake()
     {
         
@@ -36,6 +38,7 @@ public class containergeneral : MonoBehaviour
     {
         savemanag.recepkaan.cardboardamount += 1;
         savemanag.JsonSave();
+        sfx.CollectSound();
     }
 
     

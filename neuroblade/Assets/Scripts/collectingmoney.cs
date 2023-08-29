@@ -5,7 +5,10 @@ using UnityEngine;
 public class collectingmoney : MonoBehaviour
 {
     public characterstatdata characterstat;
+    
     public savemanager savemanag;  
+
+    public musichandler sfx;
 
     public int amountMoney = 3; 
 
@@ -22,5 +25,6 @@ public class collectingmoney : MonoBehaviour
         Destroy(gameObject);
         savemanag.recepkaan.currentcash += amountMoney;
         savemanag.JsonSave();
+        sfx.CollectSound();
     }
 }
