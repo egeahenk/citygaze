@@ -9,7 +9,7 @@ public class endingpanelselector : MonoBehaviour
 {
     public GameObject panelselection;
 
-    goodending ge;
+    public GameObject ge;
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Player"))
@@ -26,7 +26,7 @@ public class endingpanelselector : MonoBehaviour
 
     public void Yes()
     {
-        ge.GetGoodEnding();
+        ge.SetActive(true);
     }    
 
 

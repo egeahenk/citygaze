@@ -221,7 +221,9 @@ MonoBehaviour:
     isKnifeHolding: 0
     cardboardamount: 0
     isCorpseFound: 0
+    isAlienTech: 0
   savemanag: {fileID: 2134929543}
+  sfx: {fileID: 0}
   amountMoney: 1
 --- !u!212 &14270616
 SpriteRenderer:
@@ -715,7 +717,9 @@ MonoBehaviour:
     isKnifeHolding: 0
     cardboardamount: 0
     isCorpseFound: 0
+    isAlienTech: 0
   savemanag: {fileID: 2134929543}
+  sfx: {fileID: 0}
   amountMoney: 1
 --- !u!212 &96372283
 SpriteRenderer:
@@ -1448,7 +1452,9 @@ MonoBehaviour:
     isKnifeHolding: 0
     cardboardamount: 0
     isCorpseFound: 0
+    isAlienTech: 0
   savemanag: {fileID: 2134929543}
+  sfx: {fileID: 0}
   amountMoney: 1
 --- !u!212 &262338493
 SpriteRenderer:
@@ -5177,6 +5183,7 @@ MonoBehaviour:
   isCollected: 0
   isTriggered: 0
   savemanag: {fileID: 2134929543}
+  sfx: {fileID: 0}
 --- !u!212 &454070005
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5327,7 +5334,9 @@ MonoBehaviour:
     isKnifeHolding: 0
     cardboardamount: 0
     isCorpseFound: 0
+    isAlienTech: 0
   savemanag: {fileID: 2134929543}
+  sfx: {fileID: 0}
   amountMoney: 1
 --- !u!212 &457837513
 SpriteRenderer:
@@ -5662,7 +5671,9 @@ MonoBehaviour:
     isKnifeHolding: 0
     cardboardamount: 0
     isCorpseFound: 0
+    isAlienTech: 0
   savemanag: {fileID: 2134929543}
+  sfx: {fileID: 0}
   amountMoney: 2
 --- !u!212 &594326274
 SpriteRenderer:
@@ -5872,6 +5883,7 @@ MonoBehaviour:
   isCollected: 0
   isTriggered: 0
   savemanag: {fileID: 2134929543}
+  sfx: {fileID: 0}
 --- !u!212 &612187577
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6072,7 +6084,9 @@ MonoBehaviour:
     isKnifeHolding: 0
     cardboardamount: 0
     isCorpseFound: 0
+    isAlienTech: 0
   savemanag: {fileID: 2134929543}
+  sfx: {fileID: 0}
   amountMoney: 1
 --- !u!212 &618183222
 SpriteRenderer:
@@ -6620,6 +6634,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ada25aa4f98e7dd43ab99bf945a20755, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dh: {fileID: 0}
+  sv: {fileID: 0}
 --- !u!61 &720550485
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6897,7 +6913,9 @@ MonoBehaviour:
     isKnifeHolding: 0
     cardboardamount: 0
     isCorpseFound: 0
+    isAlienTech: 0
   savemanag: {fileID: 2134929543}
+  sfx: {fileID: 0}
   amountMoney: 2
 --- !u!212 &887720221
 SpriteRenderer:
@@ -7348,7 +7366,9 @@ MonoBehaviour:
     isKnifeHolding: 0
     cardboardamount: 0
     isCorpseFound: 0
+    isAlienTech: 0
   savemanag: {fileID: 2134929543}
+  sfx: {fileID: 0}
   amountMoney: 1
 --- !u!212 &932408177
 SpriteRenderer:
@@ -7802,6 +7822,7 @@ MonoBehaviour:
   isCollected: 0
   isTriggered: 0
   savemanag: {fileID: 2134929543}
+  sfx: {fileID: 0}
 --- !u!212 &990200010
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8521,6 +8542,7 @@ MonoBehaviour:
   isCollected: 0
   isTriggered: 0
   savemanag: {fileID: 2134929543}
+  sfx: {fileID: 0}
 --- !u!212 &1189272279
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8670,7 +8692,9 @@ MonoBehaviour:
     isKnifeHolding: 0
     cardboardamount: 0
     isCorpseFound: 0
+    isAlienTech: 0
   savemanag: {fileID: 2134929543}
+  sfx: {fileID: 0}
   amountMoney: 2
 --- !u!212 &1195773525
 SpriteRenderer:
@@ -8822,7 +8846,9 @@ MonoBehaviour:
     isKnifeHolding: 0
     cardboardamount: 0
     isCorpseFound: 0
+    isAlienTech: 0
   savemanag: {fileID: 2134929543}
+  sfx: {fileID: 0}
   amountMoney: 1
 --- !u!212 &1200650871
 SpriteRenderer:
@@ -9233,7 +9259,9 @@ MonoBehaviour:
     isKnifeHolding: 0
     cardboardamount: 0
     isCorpseFound: 0
+    isAlienTech: 0
   savemanag: {fileID: 2134929543}
+  sfx: {fileID: 0}
   amountMoney: 1
 --- !u!212 &1258743661
 SpriteRenderer:
@@ -9347,10 +9375,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   recepkaan:
     realname: recepkaan
-    currentcash: 20
+    currentcash: 5
     isKnifeHolding: 0
     cardboardamount: 1
     isCorpseFound: 0
+    isAlienTech: 0
 --- !u!1 &1350709780 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7643026306708425798, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}
@@ -9660,7 +9689,9 @@ MonoBehaviour:
     isKnifeHolding: 0
     cardboardamount: 0
     isCorpseFound: 0
+    isAlienTech: 0
   savemanag: {fileID: 2134929543}
+  sfx: {fileID: 0}
   amountMoney: 1
 --- !u!212 &1459310219
 SpriteRenderer:
@@ -9826,7 +9857,9 @@ MonoBehaviour:
     isKnifeHolding: 0
     cardboardamount: 0
     isCorpseFound: 0
+    isAlienTech: 0
   savemanag: {fileID: 2134929543}
+  sfx: {fileID: 0}
   amountMoney: 1
 --- !u!212 &1486437491
 SpriteRenderer:
@@ -25927,7 +25960,9 @@ MonoBehaviour:
     isKnifeHolding: 0
     cardboardamount: 0
     isCorpseFound: 0
+    isAlienTech: 0
   savemanag: {fileID: 2134929543}
+  sfx: {fileID: 0}
   amountMoney: 1
 --- !u!212 &1783306899
 SpriteRenderer:
@@ -26447,6 +26482,7 @@ MonoBehaviour:
   isCollected: 0
   isTriggered: 0
   savemanag: {fileID: 2134929543}
+  sfx: {fileID: 0}
 --- !u!212 &1861992568
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26597,7 +26633,9 @@ MonoBehaviour:
     isKnifeHolding: 0
     cardboardamount: 0
     isCorpseFound: 0
+    isAlienTech: 0
   savemanag: {fileID: 2134929543}
+  sfx: {fileID: 0}
   amountMoney: 1
 --- !u!212 &1862889900
 SpriteRenderer:
@@ -26806,7 +26844,9 @@ MonoBehaviour:
     isKnifeHolding: 0
     cardboardamount: 0
     isCorpseFound: 0
+    isAlienTech: 0
   savemanag: {fileID: 2134929543}
+  sfx: {fileID: 0}
   amountMoney: 1
 --- !u!212 &1868598833
 SpriteRenderer:
@@ -26972,7 +27012,9 @@ MonoBehaviour:
     isKnifeHolding: 0
     cardboardamount: 0
     isCorpseFound: 0
+    isAlienTech: 0
   savemanag: {fileID: 2134929543}
+  sfx: {fileID: 0}
   amountMoney: 1
 --- !u!212 &1873173396
 SpriteRenderer:
@@ -27175,7 +27217,9 @@ MonoBehaviour:
     isKnifeHolding: 0
     cardboardamount: 0
     isCorpseFound: 0
+    isAlienTech: 0
   savemanag: {fileID: 2134929543}
+  sfx: {fileID: 0}
   amountMoney: 1
 --- !u!212 &1882251788
 SpriteRenderer:
@@ -27340,7 +27384,9 @@ MonoBehaviour:
     isKnifeHolding: 0
     cardboardamount: 0
     isCorpseFound: 0
+    isAlienTech: 0
   savemanag: {fileID: 2134929543}
+  sfx: {fileID: 0}
   amountMoney: 2
 --- !u!212 &1893417949
 SpriteRenderer:
@@ -39335,6 +39381,7 @@ MonoBehaviour:
   isCollected: 0
   isTriggered: 0
   savemanag: {fileID: 2134929543}
+  sfx: {fileID: 0}
 --- !u!212 &1947819444
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39658,7 +39705,9 @@ MonoBehaviour:
     isKnifeHolding: 0
     cardboardamount: 0
     isCorpseFound: 0
+    isAlienTech: 0
   savemanag: {fileID: 2134929543}
+  sfx: {fileID: 0}
   amountMoney: 1
 --- !u!212 &2005818579
 SpriteRenderer:
@@ -39824,7 +39873,9 @@ MonoBehaviour:
     isKnifeHolding: 0
     cardboardamount: 0
     isCorpseFound: 0
+    isAlienTech: 0
   savemanag: {fileID: 2134929543}
+  sfx: {fileID: 0}
   amountMoney: 1
 --- !u!212 &2011209233
 SpriteRenderer:
@@ -40778,7 +40829,9 @@ MonoBehaviour:
     isKnifeHolding: 0
     cardboardamount: 0
     isCorpseFound: 0
+    isAlienTech: 0
   savemanag: {fileID: 2134929543}
+  sfx: {fileID: 0}
   amountMoney: 1
 --- !u!212 &2074118576
 SpriteRenderer:
@@ -40944,7 +40997,9 @@ MonoBehaviour:
     isKnifeHolding: 0
     cardboardamount: 0
     isCorpseFound: 0
+    isAlienTech: 0
   savemanag: {fileID: 2134929543}
+  sfx: {fileID: 0}
   amountMoney: 1
 --- !u!212 &2093027038
 SpriteRenderer:
@@ -41099,11 +41154,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 749357699740809529, guid: fa0c505712f4e544ea62158736a7b428, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.36
+      value: 1.21
       objectReference: {fileID: 0}
     - target: {fileID: 749357699740809529, guid: fa0c505712f4e544ea62158736a7b428, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.533
+      value: -1.09
       objectReference: {fileID: 0}
     - target: {fileID: 749357699740809529, guid: fa0c505712f4e544ea62158736a7b428, type: 3}
       propertyPath: m_LocalPosition.z
@@ -41140,6 +41195,14 @@ PrefabInstance:
     - target: {fileID: 2182932339631325157, guid: fa0c505712f4e544ea62158736a7b428, type: 3}
       propertyPath: m_Name
       value: Virtual Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 3969206559162218028, guid: fa0c505712f4e544ea62158736a7b428, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3969206559162218028, guid: fa0c505712f4e544ea62158736a7b428, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4514319766946866171, guid: fa0c505712f4e544ea62158736a7b428, type: 3}
       propertyPath: m_Follow
@@ -41187,11 +41250,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6024902685969504304, guid: e893b59587be8564c95d47c89a584fc4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.36
+      value: 1.21
       objectReference: {fileID: 0}
     - target: {fileID: 6024902685969504304, guid: e893b59587be8564c95d47c89a584fc4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.533
+      value: -1.09
       objectReference: {fileID: 0}
     - target: {fileID: 6024902685969504304, guid: e893b59587be8564c95d47c89a584fc4, type: 3}
       propertyPath: m_LocalPosition.z
