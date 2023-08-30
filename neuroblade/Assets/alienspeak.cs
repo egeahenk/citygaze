@@ -10,24 +10,24 @@ public class alienspeak : MonoBehaviour
 
     public savemanager sv;
     public bool inUgly;                                                                                                                                                                         
-
+    public bool trigered;
 
     void Update()
     {
-        if(Input.GetKey(KeyCode.E) && sv.recepkaan.isAlienTech && trigered)
+        if(Input.GetKey(KeyCode.E) && !sv.recepkaan.isAlienTech && trigered)
         {
             ugly.SetActive(true);
             inUgly = true;
         }
-        if(Input.GetKey(KeyCode.E) && inUgly)
+        if(Input.GetKey(KeyCode.Escape) && inUgly)
         {
             SceneManager.LoadScene(0);                                                                             
         }
     }
-    public bool trigered;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player") && sv.recepkaan.d1)
+        if(other.CompareTag("Player"))
         {
             trigered = true;
         }

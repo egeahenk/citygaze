@@ -24,9 +24,20 @@ public class endingpanelselector : MonoBehaviour
     }
 
 
+    private void Update()
+    {
+        if(Input.GetKey(KeyCode.Escape) && end)
+        {
+            SceneManager.LoadScene(0);
+        }
+    }
+
+
+    public bool end = false;
     public void Yes()
     {
         ge.SetActive(true);
+        end = true;
     }    
 
 

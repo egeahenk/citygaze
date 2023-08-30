@@ -28,9 +28,9 @@ public class BakkalDoor : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Player") && sv.recepkaan.d1)
-        { GoD1(); }
+        { sv.JsonSave(); GoD1(); }
         if(other.CompareTag("Player") && sv.recepkaan.d2)
-        { GoD2(); }
+        { sv.JsonSave(); GoD2(); }
     }
 
     public void GoD1()

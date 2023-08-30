@@ -27,7 +27,6 @@ public class containergeneral : MonoBehaviour
     {
         if(Input.GetKey(KeyCode.E) && !isCollected && isTriggered)
         {
-            Debug.Log("E Key");
             OpenContainer();
             isCollected = true;
             GetCardboard();

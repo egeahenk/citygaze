@@ -19,14 +19,12 @@ public class useknife : MonoBehaviour
     {
         if (interactable && Input.GetKeyDown(KeyCode.E))
         {   
-            Debug.Log("useknifeused");
-            Debug.Log("Pressed E");
             be.SetActive(true);
             pressKey.SetActive(false);
             noKnife.SetActive(false);
             beopen=true;
         }   
-        if(beopen && Input.GetKeyDown(KeyCode.E))
+        if(beopen && Input.GetKey(KeyCode.Escape))
         {
             SceneManager.LoadScene(0);
         }

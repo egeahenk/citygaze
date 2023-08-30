@@ -16,7 +16,7 @@ public class Day2Load : MonoBehaviour
         {
             savemanag.JsonLoad();
             isLoadedAtFirst = true;
-            Debug.Log("First Load Activated");
+            Debug.Log("First Load Activated D2");
             /*
             savemanag.recepkaan.d2=true;
             savemanag.recepkaan.d1=false;

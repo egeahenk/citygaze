@@ -10,17 +10,17 @@ using UnityEngine.SceneManagement;
 public class savemanager : MonoBehaviour
 {
 
-    public characterstatdata recepkaan = new characterstatdata("recepkaan", 5, 1, false, false, false, false, false);
+    public characterstatdata recepkaan = new characterstatdata("recepkaan", 5, 1, false, false, false, false, false, false);
 
 
     private void Update()
     {
-        if(Input.GetKey(KeyCode.O))
+        if(Input.GetKey(KeyCode.F5))
         {
             JsonSave();
         }
 
-        if(Input.GetKey(KeyCode.P))
+        if(Input.GetKey(KeyCode.F8))
         {
             JsonLoad();
         }
@@ -33,7 +33,6 @@ public class savemanager : MonoBehaviour
         string filePath = Application.persistentDataPath+"/Saves/playerdata.json";
         Debug.Log(filePath);
         File.WriteAllText(filePath, playersData);
-        Debug.Log("JsonSave ACTIVATED");
     }
 
     public void JsonLoad()
@@ -42,7 +41,6 @@ public class savemanager : MonoBehaviour
         string playersData = File.ReadAllText(filePath);
 
         recepkaan = JsonUtility.FromJson<characterstatdata>(playersData); 
-        Debug.Log("jsonload activated"); 
     }   
 
 }
