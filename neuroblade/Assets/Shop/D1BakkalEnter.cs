@@ -4,27 +4,18 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Bakkalenter : MonoBehaviour
+public class D1BakkalEnter : MonoBehaviour
 {
-
-    public DayHandler dh;
-    
     public savemanager sv;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.CompareTag("Player") && IsPlayerInScene1())
+        if(other.CompareTag("Player") && sv.recepkaan.d1)
         {
-            EnterBakkal();
+            sv.JsonSave();
+            SceneManager.LoadScene(2);
         }
-    }
-
-    public void EnterBakkal()
-    {
-        sv.JsonSave();
-        dh.isFromD1 = true;
-        dh.isFromD2 = false;
-        SceneManager.LoadScene(2);
-    }    
+    } 
 
 
     private bool IsPlayerInScene1()

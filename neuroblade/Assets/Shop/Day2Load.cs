@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class DayChecker : MonoBehaviour
+public class Day2Load : MonoBehaviour
 {
 
     public savemanager savemanag;
-
     private bool isLoadedAtFirst = false; 
 
     // Update is called once per frame
@@ -18,9 +17,14 @@ public class DayChecker : MonoBehaviour
             savemanag.JsonLoad();
             isLoadedAtFirst = true;
             Debug.Log("First Load Activated");
+            /*
+            savemanag.recepkaan.d2=true;
+            savemanag.recepkaan.d1=false;
+            savemanag.JsonSave();
+            savemanag.JsonLoad();
+            */
         }
     }
-
 
 
     private bool IsPlayerD2()
@@ -28,4 +32,6 @@ public class DayChecker : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
         return currentScene.name == "Day2";
     }
+
+
 }

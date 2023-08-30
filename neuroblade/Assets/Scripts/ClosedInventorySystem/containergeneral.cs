@@ -53,6 +53,7 @@ public class containergeneral : MonoBehaviour
             }else Debug.Log("Key Skipped"); return;
         }
 */
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))

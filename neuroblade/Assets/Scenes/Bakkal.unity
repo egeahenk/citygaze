@@ -1496,8 +1496,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13434515df13387448a17269bd8d29e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isFromD1: 0
-  isFromD2: 0
+  ss: {fileID: 1749334871}
+  sv: {fileID: 203935279}
 --- !u!1 &528863198
 GameObject:
   m_ObjectHideFlags: 0
@@ -1957,7 +1957,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 14, y: -12}
+  m_AnchoredPosition: {x: 14, y: 0}
   m_SizeDelta: {x: -72.668, y: -104.965}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &838199489
@@ -2030,6 +2030,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5893357845966747945, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}
+      propertyPath: save
+      value: 
+      objectReference: {fileID: 203935279}
     - target: {fileID: 6367879723047502015, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}
       propertyPath: m_IsActive
       value: 0

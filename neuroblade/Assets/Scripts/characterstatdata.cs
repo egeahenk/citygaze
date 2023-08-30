@@ -14,11 +14,15 @@ public class characterstatdata
     public bool isAlienTech;
 
 
+    public bool d1;
+    public bool d2;
+
+
     public characterstatdata()
     {
 
     }
-    public characterstatdata(string realname, int currentcash, int cardboardamount, bool isKnifeHolding, bool isCorpseFound, bool isAlienTech)
+    public characterstatdata(string realname, int currentcash, int cardboardamount, bool isKnifeHolding, bool isCorpseFound, bool isAlienTech, bool d1, bool d2)
     {
         this.realname = realname;
         this.currentcash = currentcash;
@@ -26,5 +30,7 @@ public class characterstatdata
         this.isKnifeHolding = isKnifeHolding;
         this.isCorpseFound = isCorpseFound;
         this.isAlienTech = isAlienTech;
+        this.d1 = d1;
+        this.d2 = d2;
     }
 }

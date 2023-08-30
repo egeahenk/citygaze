@@ -9,7 +9,9 @@ using UnityEngine.SceneManagement;
 
 public class savemanager : MonoBehaviour
 {
-    public characterstatdata recepkaan = new characterstatdata("recepkaan", 5, 1, false, false, false);
+
+    public characterstatdata recepkaan = new characterstatdata("recepkaan", 5, 1, false, false, false, false, false);
+
 
     private void Update()
     {
