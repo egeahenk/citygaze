@@ -4,32 +4,33 @@ using UnityEngine;
 
 public class collectingmoney : MonoBehaviour
 {
-    public characterstatdata characterstat;
     public savemanager savemanag;
     public musichandler sfx;
     public int amountMoney = 3;
-    public GameObject s;
+    private bool isCollected = false;
+    public string objectIdentifier;
 
     private void Update()
     {
-        if (GameManager.Instance.spLoadOnce && !GameManager.Instance.isCollected)
+        if(GameManager.Instance.collectedObjects.Contains(objectIdentifier))
         {
-            s.SetActive(false);
+            Destroy(gameObject);
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && !GameManager.Instance.isCollected)
+        if (other.CompareTag("Player") && !GameManager.Instance.collectedObjects.Contains(objectIdentifier))
         {
             CollectMoney();
         }
     }
 
     private void CollectMoney()
-    {
-        GameManager.Instance.isCollected = true;
+    {   
+        GameManager.Instance.collectedObjects.Add(objectIdentifier); // Add the identifier to the collected objects
         Destroy(gameObject);
+        isCollected = true; 
         savemanag.recepkaan.currentcash += amountMoney;
         savemanag.JsonSave();
         sfx.CollectSound();

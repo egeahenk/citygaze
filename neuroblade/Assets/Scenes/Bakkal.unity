@@ -1498,6 +1498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ss: {fileID: 1749334871}
   sv: {fileID: 203935279}
+  isCheck: 0
 --- !u!1 &528863198
 GameObject:
   m_ObjectHideFlags: 0
@@ -2134,7 +2135,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3662076632942120571, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}
     m_RemovedGameObjects:
     - {fileID: 8598790646864879461, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}
     - {fileID: 7643026306708425798, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}

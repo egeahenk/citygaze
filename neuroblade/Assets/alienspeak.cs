@@ -14,7 +14,7 @@ public class alienspeak : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKey(KeyCode.E) && !sv.recepkaan.isAlienTech && trigered)
+        if(Input.GetKey(KeyCode.E) && sv.recepkaan.isAlienTech && trigered)
         {
             ugly.SetActive(true);
             inUgly = true;
@@ -33,7 +33,13 @@ public class alienspeak : MonoBehaviour
         }
     } 
 
-
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            trigered = false;
+        }
+    } 
 
 
 

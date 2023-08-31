@@ -215,18 +215,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterstat:
-    realname: 
-    currentcash: 0
-    isKnifeHolding: 0
-    cardboardamount: 0
-    isCorpseFound: 0
-    isAlienTech: 0
-    d1: 0
-    d2: 0
   savemanag: {fileID: 2134929543}
   sfx: {fileID: 0}
   amountMoney: 1
+  objectIdentifier: 60
 --- !u!212 &14270616
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -443,6 +435,67 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 587184592227086515, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}
   m_PrefabInstance: {fileID: 7204983745271148106}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &86495649
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2714734821005078417, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 2714734821005078417, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2714734821005078417, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2714734821005078417, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2714734821005078417, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2714734821005078417, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2714734821005078417, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2714734821005078417, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2714734821005078417, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2714734821005078417, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2714734821005078417, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6609053219946856530, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
 --- !u!1 &88633006
 GameObject:
   m_ObjectHideFlags: 0
@@ -713,18 +766,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterstat:
-    realname: 
-    currentcash: 0
-    isKnifeHolding: 0
-    cardboardamount: 0
-    isCorpseFound: 0
-    isAlienTech: 0
-    d1: 0
-    d2: 0
   savemanag: {fileID: 2134929543}
   sfx: {fileID: 0}
   amountMoney: 1
+  objectIdentifier: 54
 --- !u!212 &96372283
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1328,18 +1373,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterstat:
-    realname: 
-    currentcash: 0
-    isKnifeHolding: 0
-    cardboardamount: 0
-    isCorpseFound: 0
-    isAlienTech: 0
-    d1: 0
-    d2: 0
   savemanag: {fileID: 2134929543}
   sfx: {fileID: 0}
   amountMoney: 1
+  objectIdentifier: 65
 --- !u!212 &262338493
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5212,18 +5249,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterstat:
-    realname: 
-    currentcash: 0
-    isKnifeHolding: 0
-    cardboardamount: 0
-    isCorpseFound: 0
-    isAlienTech: 0
-    d1: 0
-    d2: 0
   savemanag: {fileID: 2134929543}
   sfx: {fileID: 0}
   amountMoney: 1
+  objectIdentifier: 63
 --- !u!212 &457837513
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5416,18 +5445,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterstat:
-    realname: 
-    currentcash: 0
-    isKnifeHolding: 0
-    cardboardamount: 0
-    isCorpseFound: 0
-    isAlienTech: 0
-    d1: 0
-    d2: 0
   savemanag: {fileID: 2134929543}
   sfx: {fileID: 0}
   amountMoney: 2
+  objectIdentifier: 72
 --- !u!212 &594326274
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5831,18 +5852,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterstat:
-    realname: 
-    currentcash: 0
-    isKnifeHolding: 0
-    cardboardamount: 0
-    isCorpseFound: 0
-    isAlienTech: 0
-    d1: 0
-    d2: 0
   savemanag: {fileID: 2134929543}
   sfx: {fileID: 0}
   amountMoney: 1
+  objectIdentifier: 56
 --- !u!212 &618183222
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6661,18 +6674,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterstat:
-    realname: 
-    currentcash: 0
-    isKnifeHolding: 0
-    cardboardamount: 0
-    isCorpseFound: 0
-    isAlienTech: 0
-    d1: 0
-    d2: 0
   savemanag: {fileID: 2134929543}
   sfx: {fileID: 0}
   amountMoney: 2
+  objectIdentifier: 70
 --- !u!212 &887720221
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7116,18 +7121,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterstat:
-    realname: 
-    currentcash: 0
-    isKnifeHolding: 0
-    cardboardamount: 0
-    isCorpseFound: 0
-    isAlienTech: 0
-    d1: 0
-    d2: 0
   savemanag: {fileID: 2134929543}
   sfx: {fileID: 0}
   amountMoney: 1
+  objectIdentifier: 53
 --- !u!212 &932408177
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7987,6 +7984,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 198666046511381840, guid: 23950c5917edb084a8e7ff0ad4970340, type: 3}
+      propertyPath: sv
+      value: 
+      objectReference: {fileID: 2134929543}
     - target: {fileID: 3824147777808323959, guid: 23950c5917edb084a8e7ff0ad4970340, type: 3}
       propertyPath: m_RootOrder
       value: 12
@@ -8552,18 +8553,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterstat:
-    realname: 
-    currentcash: 0
-    isKnifeHolding: 0
-    cardboardamount: 0
-    isCorpseFound: 0
-    isAlienTech: 0
-    d1: 0
-    d2: 0
   savemanag: {fileID: 2134929543}
   sfx: {fileID: 0}
   amountMoney: 2
+  objectIdentifier: 71
 --- !u!212 &1195773525
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8708,18 +8701,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterstat:
-    realname: 
-    currentcash: 0
-    isKnifeHolding: 0
-    cardboardamount: 0
-    isCorpseFound: 0
-    isAlienTech: 0
-    d1: 0
-    d2: 0
   savemanag: {fileID: 2134929543}
   sfx: {fileID: 0}
   amountMoney: 1
+  objectIdentifier: 51
 --- !u!212 &1200650871
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9123,18 +9108,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterstat:
-    realname: 
-    currentcash: 0
-    isKnifeHolding: 0
-    cardboardamount: 0
-    isCorpseFound: 0
-    isAlienTech: 0
-    d1: 0
-    d2: 0
   savemanag: {fileID: 2134929543}
   sfx: {fileID: 0}
   amountMoney: 1
+  objectIdentifier: 59
 --- !u!212 &1258743661
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9252,6 +9229,7 @@ MonoBehaviour:
     cardboardamount: 1
     isCorpseFound: 0
     isAlienTech: 0
+    isFinished: 0
     d1: 0
     d2: 0
 --- !u!1 &1350709780 stripped
@@ -9557,18 +9535,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterstat:
-    realname: 
-    currentcash: 0
-    isKnifeHolding: 0
-    cardboardamount: 0
-    isCorpseFound: 0
-    isAlienTech: 0
-    d1: 0
-    d2: 0
   savemanag: {fileID: 2134929543}
   sfx: {fileID: 0}
   amountMoney: 1
+  objectIdentifier: 52
 --- !u!212 &1459310219
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9727,18 +9697,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterstat:
-    realname: 
-    currentcash: 0
-    isKnifeHolding: 0
-    cardboardamount: 0
-    isCorpseFound: 0
-    isAlienTech: 0
-    d1: 0
-    d2: 0
   savemanag: {fileID: 2134929543}
   sfx: {fileID: 0}
   amountMoney: 1
+  objectIdentifier: 55
 --- !u!212 &1486437491
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25832,18 +25794,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterstat:
-    realname: 
-    currentcash: 0
-    isKnifeHolding: 0
-    cardboardamount: 0
-    isCorpseFound: 0
-    isAlienTech: 0
-    d1: 0
-    d2: 0
   savemanag: {fileID: 2134929543}
   sfx: {fileID: 0}
   amountMoney: 1
+  objectIdentifier: 57
 --- !u!212 &1783306899
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26507,18 +26461,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterstat:
-    realname: 
-    currentcash: 0
-    isKnifeHolding: 0
-    cardboardamount: 0
-    isCorpseFound: 0
-    isAlienTech: 0
-    d1: 0
-    d2: 0
   savemanag: {fileID: 2134929543}
   sfx: {fileID: 0}
   amountMoney: 1
+  objectIdentifier: 62
 --- !u!212 &1862889900
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26720,18 +26666,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterstat:
-    realname: 
-    currentcash: 0
-    isKnifeHolding: 0
-    cardboardamount: 0
-    isCorpseFound: 0
-    isAlienTech: 0
-    d1: 0
-    d2: 0
   savemanag: {fileID: 2134929543}
   sfx: {fileID: 0}
   amountMoney: 1
+  objectIdentifier: 67
 --- !u!212 &1868598833
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26890,18 +26828,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterstat:
-    realname: 
-    currentcash: 0
-    isKnifeHolding: 0
-    cardboardamount: 0
-    isCorpseFound: 0
-    isAlienTech: 0
-    d1: 0
-    d2: 0
   savemanag: {fileID: 2134929543}
   sfx: {fileID: 0}
   amountMoney: 1
+  objectIdentifier: 58
 --- !u!212 &1873173396
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27097,18 +27027,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterstat:
-    realname: 
-    currentcash: 0
-    isKnifeHolding: 0
-    cardboardamount: 0
-    isCorpseFound: 0
-    isAlienTech: 0
-    d1: 0
-    d2: 0
   savemanag: {fileID: 2134929543}
   sfx: {fileID: 0}
   amountMoney: 1
+  objectIdentifier: 64
 --- !u!212 &1882251788
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27266,18 +27188,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterstat:
-    realname: 
-    currentcash: 0
-    isKnifeHolding: 0
-    cardboardamount: 0
-    isCorpseFound: 0
-    isAlienTech: 0
-    d1: 0
-    d2: 0
   savemanag: {fileID: 2134929543}
   sfx: {fileID: 0}
   amountMoney: 2
+  objectIdentifier: 73
 --- !u!212 &1893417949
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39589,18 +39503,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterstat:
-    realname: 
-    currentcash: 0
-    isKnifeHolding: 0
-    cardboardamount: 0
-    isCorpseFound: 0
-    isAlienTech: 0
-    d1: 0
-    d2: 0
   savemanag: {fileID: 2134929543}
   sfx: {fileID: 0}
   amountMoney: 1
+  objectIdentifier: 61
 --- !u!212 &2005818579
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39759,18 +39665,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterstat:
-    realname: 
-    currentcash: 0
-    isKnifeHolding: 0
-    cardboardamount: 0
-    isCorpseFound: 0
-    isAlienTech: 0
-    d1: 0
-    d2: 0
   savemanag: {fileID: 2134929543}
   sfx: {fileID: 0}
   amountMoney: 1
+  objectIdentifier: 69
 --- !u!212 &2011209233
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40717,18 +40615,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterstat:
-    realname: 
-    currentcash: 0
-    isKnifeHolding: 0
-    cardboardamount: 0
-    isCorpseFound: 0
-    isAlienTech: 0
-    d1: 0
-    d2: 0
   savemanag: {fileID: 2134929543}
   sfx: {fileID: 0}
   amountMoney: 1
+  objectIdentifier: 68
 --- !u!212 &2074118576
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40887,18 +40777,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterstat:
-    realname: 
-    currentcash: 0
-    isKnifeHolding: 0
-    cardboardamount: 0
-    isCorpseFound: 0
-    isAlienTech: 0
-    d1: 0
-    d2: 0
   savemanag: {fileID: 2134929543}
   sfx: {fileID: 0}
   amountMoney: 1
+  objectIdentifier: 66
 --- !u!212 &2093027038
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41331,7 +41213,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3662076632942120571, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 7797350777879938780, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}
