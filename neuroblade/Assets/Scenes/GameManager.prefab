@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2714734821005078417}
   - component: {fileID: 5923158223801416468}
+  - component: {fileID: 3579196865849724182}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -30,7 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &5923158223801416468
 MonoBehaviour:
@@ -44,3 +45,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d9f59216c1eeb4469548382e0b1b462, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3579196865849724182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6609053219946856530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59c9811754e42be43a17967d111d7e19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recepkaan:
+    realname: recepkaan
+    currentcash: 5
+    isKnifeHolding: 0
+    cardboardamount: 1
+    isCorpseFound: 0
+    isAlienTech: 0
+    isFinished: 0
+    d1: 0
+    d2: 0

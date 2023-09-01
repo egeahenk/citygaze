@@ -28,7 +28,7 @@ public class collectingmoney : MonoBehaviour
 
     private void CollectMoney()
     {   
-        GameManager.Instance.collectedObjects.Add(objectIdentifier); // Add the identifier to the collected objects
+        GameManager.Instance.collectedObjects.Add(objectIdentifier);
         Destroy(gameObject);
         isCollected = true; 
         savemanag.recepkaan.currentcash += amountMoney;

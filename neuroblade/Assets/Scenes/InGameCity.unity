@@ -215,7 +215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 86495651}
   sfx: {fileID: 2133318121}
   amountMoney: 1
   objectIdentifier: 60
@@ -332,7 +332,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panelselection: {fileID: 7204983745271148107}
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 86495651}
 --- !u!212 &32331061
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -496,6 +496,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
+--- !u!114 &86495651 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
+  m_PrefabInstance: {fileID: 86495649}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59c9811754e42be43a17967d111d7e19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &88633006
 GameObject:
   m_ObjectHideFlags: 0
@@ -766,7 +777,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 86495651}
   sfx: {fileID: 2133318121}
   amountMoney: 1
   objectIdentifier: 54
@@ -1373,7 +1384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 86495651}
   sfx: {fileID: 2133318121}
   amountMoney: 1
   objectIdentifier: 65
@@ -1473,9 +1484,8 @@ Transform:
   m_Children:
   - {fileID: 342437209}
   - {fileID: 720550482}
-  - {fileID: 443418083}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &291740659
 GameObject:
@@ -1769,7 +1779,7 @@ Transform:
   - {fileID: 1223938510}
   - {fileID: 697560122}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &342437208
 GameObject:
@@ -4858,73 +4868,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &443418082
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 443418083}
-  - component: {fileID: 443418085}
-  - component: {fileID: 443418084}
-  m_Layer: 0
-  m_Name: DoorTrigger (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &443418083
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 443418082}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.686, y: 1.174, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 277278138}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &443418084
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 443418082}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 18.681011}
-  m_Center: {x: 0, y: 0, z: 2.2365406}
---- !u!114 &443418085
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 443418082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ada25aa4f98e7dd43ab99bf945a20755, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sv: {fileID: 2134929543}
 --- !u!1 &449404167
 GameObject:
   m_ObjectHideFlags: 0
@@ -5171,7 +5114,7 @@ MonoBehaviour:
   closeinv: {fileID: 1850649797}
   isCollected: 0
   isTriggered: 0
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 86495651}
   sfx: {fileID: 2133318121}
 --- !u!212 &454070005
 SpriteRenderer:
@@ -5317,7 +5260,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 86495651}
   sfx: {fileID: 2133318121}
   amountMoney: 1
   objectIdentifier: 63
@@ -5513,7 +5456,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 86495651}
   sfx: {fileID: 2133318121}
   amountMoney: 2
   objectIdentifier: 72
@@ -5724,7 +5667,7 @@ MonoBehaviour:
   closeinv: {fileID: 1850649797}
   isCollected: 0
   isTriggered: 0
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 86495651}
   sfx: {fileID: 2133318121}
 --- !u!212 &612187577
 SpriteRenderer:
@@ -5826,7 +5769,7 @@ Transform:
   - {fileID: 1633562704}
   - {fileID: 291740660}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &618183218
 GameObject:
@@ -5920,7 +5863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 86495651}
   sfx: {fileID: 2133318121}
   amountMoney: 1
   objectIdentifier: 56
@@ -6470,7 +6413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ada25aa4f98e7dd43ab99bf945a20755, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sv: {fileID: 2134929543}
+  sv: {fileID: 86495651}
 --- !u!61 &720550485
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6639,7 +6582,7 @@ Transform:
   - {fileID: 1415999897}
   - {fileID: 132141469}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!224 &811513504 stripped
 RectTransform:
@@ -6742,7 +6685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 86495651}
   sfx: {fileID: 2133318121}
   amountMoney: 2
   objectIdentifier: 70
@@ -7189,7 +7132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 86495651}
   sfx: {fileID: 2133318121}
   amountMoney: 1
   objectIdentifier: 53
@@ -7488,7 +7431,7 @@ MonoBehaviour:
   closeinv: {fileID: 1850649797}
   isCollected: 0
   isTriggered: 0
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 86495651}
 --- !u!1 &990200005
 GameObject:
   m_ObjectHideFlags: 0
@@ -7644,7 +7587,7 @@ MonoBehaviour:
   closeinv: {fileID: 1850649797}
   isCollected: 0
   isTriggered: 0
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 86495651}
   sfx: {fileID: 2133318121}
 --- !u!212 &990200010
 SpriteRenderer:
@@ -8055,18 +7998,18 @@ PrefabInstance:
     - target: {fileID: 198666046511381840, guid: 23950c5917edb084a8e7ff0ad4970340, type: 3}
       propertyPath: sv
       value: 
-      objectReference: {fileID: 2134929543}
+      objectReference: {fileID: 86495651}
     - target: {fileID: 3824147777808323959, guid: 23950c5917edb084a8e7ff0ad4970340, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3824147777808323959, guid: 23950c5917edb084a8e7ff0ad4970340, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.29
+      value: 2.61
       objectReference: {fileID: 0}
     - target: {fileID: 3824147777808323959, guid: 23950c5917edb084a8e7ff0ad4970340, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.87
+      value: -0.63
       objectReference: {fileID: 0}
     - target: {fileID: 3824147777808323959, guid: 23950c5917edb084a8e7ff0ad4970340, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8139,7 +8082,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1092601523
 MonoBehaviour:
@@ -8153,7 +8096,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fe7cd6b248df794cb8b61b2d7f9c3e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sv: {fileID: 2134929543}
+  sv: {fileID: 86495651}
   d1checked: 0
   d2checked: 0
 --- !u!1001 &1159200585
@@ -8476,7 +8419,7 @@ MonoBehaviour:
   closeinv: {fileID: 1850649797}
   isCollected: 0
   isTriggered: 0
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 86495651}
   sfx: {fileID: 2133318121}
 --- !u!212 &1189272279
 SpriteRenderer:
@@ -8621,7 +8564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 86495651}
   sfx: {fileID: 2133318121}
   amountMoney: 2
   objectIdentifier: 71
@@ -8769,7 +8712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 86495651}
   sfx: {fileID: 2133318121}
   amountMoney: 1
   objectIdentifier: 51
@@ -9083,7 +9026,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd8c1bdef3dd0ff4ba2b3eb567321b7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 86495651}
 --- !u!1 &1258743657
 GameObject:
   m_ObjectHideFlags: 0
@@ -9176,7 +9119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 86495651}
   sfx: {fileID: 2133318121}
   amountMoney: 1
   objectIdentifier: 59
@@ -9276,7 +9219,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1263630416
 MonoBehaviour:
@@ -9603,7 +9546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 86495651}
   sfx: {fileID: 2133318121}
   amountMoney: 1
   objectIdentifier: 52
@@ -9765,7 +9708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 86495651}
   sfx: {fileID: 2133318121}
   amountMoney: 1
   objectIdentifier: 55
@@ -11828,7 +11771,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1723201899
 GameObject:
@@ -25862,7 +25805,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 86495651}
   sfx: {fileID: 2133318121}
   amountMoney: 1
   objectIdentifier: 57
@@ -26383,7 +26326,7 @@ MonoBehaviour:
   closeinv: {fileID: 1850649797}
   isCollected: 0
   isTriggered: 0
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 86495651}
   sfx: {fileID: 2133318121}
 --- !u!212 &1861992568
 SpriteRenderer:
@@ -26529,7 +26472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 86495651}
   sfx: {fileID: 2133318121}
   amountMoney: 1
   objectIdentifier: 62
@@ -26734,7 +26677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 86495651}
   sfx: {fileID: 2133318121}
   amountMoney: 1
   objectIdentifier: 67
@@ -26896,7 +26839,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 86495651}
   sfx: {fileID: 2133318121}
   amountMoney: 1
   objectIdentifier: 58
@@ -27001,7 +26944,7 @@ Transform:
   - {fileID: 917727944}
   - {fileID: 1783706840}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1882251784
 GameObject:
@@ -27095,7 +27038,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 86495651}
   sfx: {fileID: 2133318121}
   amountMoney: 1
   objectIdentifier: 64
@@ -27256,7 +27199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 86495651}
   sfx: {fileID: 2133318121}
   amountMoney: 2
   objectIdentifier: 73
@@ -39252,7 +39195,7 @@ MonoBehaviour:
   closeinv: {fileID: 1850649797}
   isCollected: 0
   isTriggered: 0
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 86495651}
   sfx: {fileID: 2133318121}
 --- !u!212 &1947819444
 SpriteRenderer:
@@ -39571,7 +39514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 86495651}
   sfx: {fileID: 2133318121}
   amountMoney: 1
   objectIdentifier: 61
@@ -39733,7 +39676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 86495651}
   sfx: {fileID: 2133318121}
   amountMoney: 1
   objectIdentifier: 69
@@ -40683,7 +40626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 86495651}
   sfx: {fileID: 2133318121}
   amountMoney: 1
   objectIdentifier: 68
@@ -40845,7 +40788,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 86495651}
   sfx: {fileID: 2133318121}
   amountMoney: 1
   objectIdentifier: 66
@@ -40988,17 +40931,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd708273e56f940469195ff376fc5f94, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2134929543 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2440127077469386678, guid: e893b59587be8564c95d47c89a584fc4, type: 3}
-  m_PrefabInstance: {fileID: 4790397570602168763}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59c9811754e42be43a17967d111d7e19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &343196153345721453
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41109,7 +41041,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6024902685969504304, guid: e893b59587be8564c95d47c89a584fc4, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6024902685969504304, guid: e893b59587be8564c95d47c89a584fc4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -41157,6 +41089,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6037614804881684478, guid: e893b59587be8564c95d47c89a584fc4, type: 3}
+    - {fileID: 2440127077469386678, guid: e893b59587be8564c95d47c89a584fc4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -41171,7 +41104,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 325267460809358857, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 404442858864963837, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}
       propertyPath: m_IsActive
@@ -41216,7 +41149,7 @@ PrefabInstance:
     - target: {fileID: 4743534699339053443, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}
       propertyPath: savemanag
       value: 
-      objectReference: {fileID: 2134929543}
+      objectReference: {fileID: 86495651}
     - target: {fileID: 4983983165212552599, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -41256,7 +41189,7 @@ PrefabInstance:
     - target: {fileID: 6633887163647809669, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}
       propertyPath: savemanag
       value: 
-      objectReference: {fileID: 2134929543}
+      objectReference: {fileID: 86495651}
     - target: {fileID: 7196826108727728356, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -41275,7 +41208,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7797350777879938780, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7797350777879938780, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}
       propertyPath: m_AnchorMax.x
@@ -41383,7 +41316,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9160592047803013378, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3662076632942120571, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}

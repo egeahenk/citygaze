@@ -612,17 +612,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 152913076}
   m_CullTransparentMesh: 1
---- !u!114 &203935279 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2440127077469386678, guid: e893b59587be8564c95d47c89a584fc4, type: 3}
-  m_PrefabInstance: {fileID: 1211974856}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59c9811754e42be43a17967d111d7e19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &216391508
 GameObject:
   m_ObjectHideFlags: 0
@@ -1497,7 +1486,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ss: {fileID: 1749334871}
-  sv: {fileID: 203935279}
+  sv: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   isCheck: 0
 --- !u!1 &528863198
 GameObject:
@@ -1778,7 +1767,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 728351930}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.88775337, y: -2.0217118, z: 0.030050706}
+  m_LocalPosition: {x: 0.88775337, y: -2.0217118, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2026,7 +2015,7 @@ PrefabInstance:
     - target: {fileID: 4743534699339053443, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}
       propertyPath: savemanag
       value: 
-      objectReference: {fileID: 203935279}
+      objectReference: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
     - target: {fileID: 5461360118898759142, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -2034,7 +2023,7 @@ PrefabInstance:
     - target: {fileID: 5893357845966747945, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}
       propertyPath: save
       value: 
-      objectReference: {fileID: 203935279}
+      objectReference: {fileID: 0}
     - target: {fileID: 6367879723047502015, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2042,7 +2031,7 @@ PrefabInstance:
     - target: {fileID: 6633887163647809669, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}
       propertyPath: savemanag
       value: 
-      objectReference: {fileID: 203935279}
+      objectReference: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
     - target: {fileID: 7797350777879938780, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -3215,6 +3204,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6037614804881684478, guid: e893b59587be8564c95d47c89a584fc4, type: 3}
+    - {fileID: 2440127077469386678, guid: e893b59587be8564c95d47c89a584fc4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4501,7 +4491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0fbf27d5f8842eb4bb2e375fa57f47a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 203935279}
+  savemanag: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   pricetext: {fileID: 1735743767}
   newsprice: 500
   AlienTechSp: {fileID: 1175947344}

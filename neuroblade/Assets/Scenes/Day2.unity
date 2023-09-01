@@ -215,7 +215,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   sfx: {fileID: 173311630}
   amountMoney: 1
   objectIdentifier: 10
@@ -706,7 +706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   sfx: {fileID: 173311630}
   amountMoney: 1
   objectIdentifier: 5
@@ -1254,7 +1254,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9300dd1330d75494091cf87799c37491, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  save: {fileID: 2134929543}
+  save: {fileID: 0}
   pressKey: {fileID: 222167843}
   noKnife: {fileID: 209590941}
   be: {fileID: 96636729}
@@ -1510,7 +1510,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   sfx: {fileID: 173311630}
   amountMoney: 1
   objectIdentifier: 15
@@ -2301,7 +2301,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ugly: {fileID: 1571591070}
-  sv: {fileID: 2134929543}
+  sv: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   inUgly: 0
   trigered: 0
 --- !u!60 &380256194
@@ -5517,7 +5517,7 @@ MonoBehaviour:
   closeinv: {fileID: 1850649797}
   isCollected: 0
   isTriggered: 0
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   sfx: {fileID: 173311630}
 --- !u!212 &454070005
 SpriteRenderer:
@@ -5663,7 +5663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   sfx: {fileID: 173311630}
   amountMoney: 1
   objectIdentifier: 13
@@ -5824,7 +5824,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   sfx: {fileID: 173311630}
   amountMoney: 2
   objectIdentifier: 22
@@ -6035,7 +6035,7 @@ MonoBehaviour:
   closeinv: {fileID: 1850649797}
   isCollected: 0
   isTriggered: 0
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   sfx: {fileID: 173311630}
 --- !u!212 &612187577
 SpriteRenderer:
@@ -6220,7 +6220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   sfx: {fileID: 173311630}
   amountMoney: 1
   objectIdentifier: 7
@@ -6492,7 +6492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fe7cd6b248df794cb8b61b2d7f9c3e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sv: {fileID: 2134929543}
+  sv: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   d1checked: 0
   d2checked: 0
 --- !u!4 &655528451
@@ -6888,7 +6888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e14af711b997784583bb5f14c4f4910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sv: {fileID: 2134929543}
+  sv: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
 --- !u!1 &761515751
 GameObject:
   m_ObjectHideFlags: 0
@@ -7115,7 +7115,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Whatever happens, happens.
+  m_text: Now.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7288,7 +7288,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   sfx: {fileID: 173311630}
   amountMoney: 2
   objectIdentifier: 20
@@ -7897,7 +7897,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   sfx: {fileID: 173311630}
   amountMoney: 1
   objectIdentifier: 4
@@ -8331,7 +8331,7 @@ MonoBehaviour:
   closeinv: {fileID: 1850649797}
   isCollected: 0
   isTriggered: 0
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   sfx: {fileID: 173311630}
 --- !u!1 &990200005
 GameObject:
@@ -8540,7 +8540,7 @@ MonoBehaviour:
   closeinv: {fileID: 1850649797}
   isCollected: 0
   isTriggered: 0
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   sfx: {fileID: 173311630}
 --- !u!1 &995695256 stripped
 GameObject:
@@ -9292,7 +9292,7 @@ MonoBehaviour:
   closeinv: {fileID: 1850649797}
   isCollected: 0
   isTriggered: 0
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   sfx: {fileID: 173311630}
 --- !u!212 &1189272279
 SpriteRenderer:
@@ -9437,7 +9437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   sfx: {fileID: 173311630}
   amountMoney: 2
   objectIdentifier: 21
@@ -9585,7 +9585,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   sfx: {fileID: 173311630}
   amountMoney: 1
   objectIdentifier: 2
@@ -9873,7 +9873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   sfx: {fileID: 173311630}
   amountMoney: 1
   objectIdentifier: 9
@@ -10372,7 +10372,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   sfx: {fileID: 173311630}
   amountMoney: 1
   objectIdentifier: 3
@@ -10534,7 +10534,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   sfx: {fileID: 173311630}
   amountMoney: 1
   objectIdentifier: 6
@@ -26704,7 +26704,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   sfx: {fileID: 173311630}
   amountMoney: 1
   objectIdentifier: 8
@@ -27144,7 +27144,7 @@ MonoBehaviour:
   closeinv: {fileID: 1850649797}
   isCollected: 0
   isTriggered: 0
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   sfx: {fileID: 173311630}
 --- !u!212 &1861992568
 SpriteRenderer:
@@ -27290,7 +27290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   sfx: {fileID: 173311630}
   amountMoney: 1
   objectIdentifier: 12
@@ -27495,7 +27495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   sfx: {fileID: 173311630}
   amountMoney: 1
   objectIdentifier: 17
@@ -27657,7 +27657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   sfx: {fileID: 173311630}
   amountMoney: 1
   objectIdentifier: 1
@@ -27855,7 +27855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   sfx: {fileID: 173311630}
   amountMoney: 1
   objectIdentifier: 14
@@ -28016,7 +28016,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   sfx: {fileID: 173311630}
   amountMoney: 2
   objectIdentifier: 23
@@ -40012,7 +40012,7 @@ MonoBehaviour:
   closeinv: {fileID: 1850649797}
   isCollected: 0
   isTriggered: 0
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   sfx: {fileID: 173311630}
 --- !u!212 &1947819444
 SpriteRenderer:
@@ -40331,7 +40331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   sfx: {fileID: 173311630}
   amountMoney: 1
   objectIdentifier: 11
@@ -40493,7 +40493,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   sfx: {fileID: 173311630}
   amountMoney: 1
   objectIdentifier: 19
@@ -41332,7 +41332,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   sfx: {fileID: 173311630}
   amountMoney: 1
   objectIdentifier: 18
@@ -41494,7 +41494,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4460a28ff35ba9e4cb651a58bdaaa669, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
   sfx: {fileID: 173311630}
   amountMoney: 1
   objectIdentifier: 16
@@ -41564,17 +41564,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Library: []
   m_SpriteLibraryAsset: {fileID: 0}
---- !u!114 &2134929543 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2440127077469386678, guid: e893b59587be8564c95d47c89a584fc4, type: 3}
-  m_PrefabInstance: {fileID: 4790397570602168763}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4790397570602168764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 59c9811754e42be43a17967d111d7e19, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &343196153345721453
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41786,6 +41775,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6037614804881684478, guid: e893b59587be8564c95d47c89a584fc4, type: 3}
+    - {fileID: 2440127077469386678, guid: e893b59587be8564c95d47c89a584fc4, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -41810,7 +41800,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 803b807bf53873d4ea5c003c19241cc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  savemanag: {fileID: 2134929543}
+  savemanag: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
 --- !u!1001 &6603786890979422772
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41822,7 +41812,7 @@ PrefabInstance:
     - target: {fileID: 198666046511381840, guid: 23950c5917edb084a8e7ff0ad4970340, type: 3}
       propertyPath: sv
       value: 
-      objectReference: {fileID: 2134929543}
+      objectReference: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
     - target: {fileID: 3824147777808323959, guid: 23950c5917edb084a8e7ff0ad4970340, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -41887,7 +41877,7 @@ PrefabInstance:
     - target: {fileID: 4743534699339053443, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}
       propertyPath: savemanag
       value: 
-      objectReference: {fileID: 2134929543}
+      objectReference: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
     - target: {fileID: 4983983165212552599, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -41908,6 +41898,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5595586399096248878, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}
+      propertyPath: m_Color.a
+      value: 0.48235294
+      objectReference: {fileID: 0}
     - target: {fileID: 5893357845966747945, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}
       propertyPath: save
       value: 
@@ -41915,7 +41909,7 @@ PrefabInstance:
     - target: {fileID: 6633887163647809669, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}
       propertyPath: savemanag
       value: 
-      objectReference: {fileID: 2134929543}
+      objectReference: {fileID: 3579196865849724182, guid: e148da9e127c87f4cb6f4fe01363c0a4, type: 3}
     - target: {fileID: 7196826108727728356, guid: 2dc23e580cae9954f9fb88c8ea2ffffd, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
