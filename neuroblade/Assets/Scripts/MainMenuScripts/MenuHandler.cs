@@ -7,9 +7,20 @@ public class MenuHandler : MonoBehaviour
 {
     public GameObject settingsPanel; 
     public GameObject savesPanel;
-    public GameObject loaderrorScreen;
     public savemanager savemanage;
+	
 
+	private void Awake()
+	{
+         savemanage.recepkaan.currentcash = 5;
+         savemanage.recepkaan.isKnifeHolding = false;
+         savemanage.recepkaan.isCorpseFound = false;
+         savemanage.recepkaan.isAlienTech = false;
+         savemanage.recepkaan.d1 = true;
+         savemanage.recepkaan.d2 = false;
+         savemanage.recepkaan.cardboardamount = 1;
+         savemanage.JsonSave();
+	}
 
     public void StartGame()
     {
@@ -27,28 +38,6 @@ public class MenuHandler : MonoBehaviour
         settingsPanel.SetActive(false);
     }
 
-    #endregion
-
-    #region opensavesclosesaves
-    public void OpenSaves()
-    {
-        savesPanel.SetActive(true);
-    }
-
-    public void CloseSaves() 
-    {
-        savesPanel.SetActive(false);
-    }
-
-    public void loaderrorScreenFalse() 
-    {
-        loaderrorScreen.SetActive(false);
-    }
-
-    public void loaderrorScreenTrue()
-    {
-    loaderrorScreen.SetActive(true);
-    }
     #endregion
 
     public void ExitGame()

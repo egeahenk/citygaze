@@ -30,16 +30,15 @@ public class savemanager : MonoBehaviour
     public void JsonSave()
     {
         string playersData = JsonUtility.ToJson(recepkaan);
-        string filePath = Application.persistentDataPath+"/Saves/playerdata.json";
-        Debug.Log(filePath);
+        string filePath = Application.persistentDataPath+"./Saves/playerdata.json";
+	Debug.Log(filePath);
         File.WriteAllText(filePath, playersData);
     }
 
     public void JsonLoad()
     {
-        string filePath = Application.persistentDataPath+"/Saves/playerdata.json";
+        string filePath = Application.persistentDataPath+"./Saves/playerdata.json";
         string playersData = File.ReadAllText(filePath);
-
         recepkaan = JsonUtility.FromJson<characterstatdata>(playersData); 
     }   
 
